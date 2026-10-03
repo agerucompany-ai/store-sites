@@ -10,84 +10,83 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="store.css">
 </head>
-<body class="tanba" style="--main:#2f4a2a;--accent:#c9a45c">
+<body class="tanba has-slider" style="--main:#2f4a2a;--accent:#c9a45c">
 
 <header class="site-header">
   <a class="brand" href="#top"><img src="img/logo-w.png" alt="丹波農商"><span>株式会社丹波農商</span></a>
   <button class="menu-btn" aria-label="メニュー">☰</button>
   <nav>
-    <a href="#about">私たちについて</a>
+    <a href="#about">経営理念</a>
     <a href="#cycle">循環型農業</a>
     <a href="#business">事業</a>
     <a href="kuri.html">丹波栗</a>
     <a href="#cattle">牛の育て方</a>
+    <a href="#youtube">YouTube</a>
     <a href="#team">メンバー</a>
     <a href="#company">会社概要</a>
     <a class="nav-reserve" href="#contact">お問い合わせ</a>
   </nav>
 </header>
 
-<div class="hero" id="top">
-  <img class="bg" src="img/hero.jpg" alt="丹波市市島町の田んぼ">
-  <div class="hero-text">
-    <img class="hero-logo" src="img/logo-w.png" alt="株式会社丹波農商">
-    <p>丹波の食材を全国へ、世界へ</p>
+<!-- ===== トップのスライド（写真を押すと各セクション・ページへ） ===== -->
+<div class="slider" id="slider" aria-roledescription="carousel">
+  <div class="slides">
+    <a class="slide" href="#cycle"><img src="img/hero.jpg" alt="丹波市市島町の田んぼ"><div class="cap"><img class="cap-logo" src="img/logo-w.png" alt=""><span>循環型農業<small>牛が食べる草は自分たちで。牛の堆肥は田畑へ還す</small></span></div></a>
+    <a class="slide" href="#business"><img src="img/barn-in.jpg" alt="牛舎の但馬牛"><div class="cap"><span>但馬牛の繁殖<small>母牛の乳で育てる、病気に強い牛づくり</small></span></div></a>
+    <a class="slide" href="kuri.html"><img src="img/kuri-hero.jpg" alt="丹波栗"><div class="cap"><span>丹波栗<small>自社栗園と地域の栗を、一流の料理人へ</small></span></div></a>
+    <a class="slide" href="#business"><img src="img/biz-dosho.jpg" alt="牧草地"><div class="cap"><span>牧草（丹波土匠）<small>耕作放棄地を、牛のための牧草地に</small></span></div></a>
+    <a class="slide" href="#youtube"><img src="img/yt-thumb.jpg" alt="YouTube"><div class="cap"><span>YouTube「関わるすべてに喜びを。」<small>農業の現場を、農家目線で毎週発信</small></span></div></a>
+    <a class="slide" href="#instagram"><img src="img/cow-field.jpg" alt="放牧中の但馬牛"><div class="cap"><span>Instagram<small>@tambanousho 毎日の農場の様子</small></span></div></a>
   </div>
+  <button class="nav prev" aria-label="前へ">‹</button>
+  <button class="nav next" aria-label="次へ">›</button>
+  <div class="dots"></div>
 </div>
 
-<!-- ===== 私たちについて ===== -->
-<section id="about">
+<!-- ===== 経営理念（Notion マニュアルガイド(丹波農商)「ミッションステートメント」より） ===== -->
+<section id="about" class="philo-t">
   <div class="wrap">
-    <h2 class="sec-title fade">農業で丹波を元気に</h2>
-    <div class="person">
+    <p class="ph-vision fade"><small>VISION</small>丹波の食材を全国、世界へ</p>
+    <p class="ph-mission fade"><small>MISSION</small>食の群戦略と循環型農業の確立</p>
+    <div class="ph-values fade">
+      <div><b>01</b><span>関わるすべてに喜びを</span></div>
+      <div><b>02</b><span>持ち味活かしてみんなが楽しい組織</span></div>
+      <div><b>03</b><span>現場主義とデータドリブンで、進化し続ける</span></div>
+    </div>
+    <div class="person ph-body">
       <img class="fade" src="img/founders.jpg" alt="代表 大塩敦史と取締役 栗原優介">
       <div class="fade">
-        <p>株式会社丹波農商は、兵庫県丹波市市島町で生まれ育った従兄弟ふたりが2019年に立ち上げた農業法人です。</p>
-        <p>但馬牛の繁殖、牛が食べる牧草づくり、牛の堆肥づくり、その堆肥で育てる米と丹波栗、そして食品加工まで。ひとつひとつを別の仕事にせず、ひとつの農場の中でつないでいます。</p>
-        <p>経営理念は「農業で人々の幸せに貢献する」。ミッションは「農業で丹波を元気に」。耕作放棄地を田畑に戻し、地域の農家さんと一緒に、丹波の食材を全国へ、そして世界へ届けていきます。</p>
+        <h3>丹波から世界へ</h3>
+        <p>お客様が本当に感動するのは「そこそこの商品」ではなく、圧倒的なナンバー1です。但馬牛、丹波栗――それぞれのジャンルで世界一の品質を追求し、鋭く尖った専門店の集まり（群）をつくる。それが私たちの「食の群戦略」です。</p>
+        <p>そしてもうひとつが「循環型農業」。耕作放棄地を牧草地に戻し、地域の草で牛を育て、牛の堆肥を土へ還す。外から持ち込まず、無駄を出さない循環を、この但馬・丹波の地で完成させます。</p>
+        <p>現場で土に触れ、データで品質を磨く。地域の農家さんと一緒に、農業を稼げる仕事にしていきます。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 循環型農業 ===== -->
+<!-- ===== 循環型農業（イラストの循環図） ===== -->
 <section class="dark" id="cycle">
   <div class="wrap">
     <h2 class="sec-title fade">循環型農業</h2>
-    <p class="catch fade">牛が食べる草は、自分たちの田んぼで育てる。<br>牛の堆肥は、田畑に還す。<br>田んぼから出た稲わらともみ殻は、また牛のもとへ。</p>
-    <ol class="cycle-steps">
-      <li class="fade">
-        <img src="img/cycle-grass.jpg" alt="牧草を育てる丹波の圃場">
-        <span class="no">01</span>
-        <h3>牧草を育てる</h3>
-        <p>耕作放棄地や水田を耕し、牛が食べる国産の牧草を自分たちで作ります。丹波市と福知山市大江町であわせて約33ha。</p>
-      </li>
-      <li class="fade">
-        <img src="img/calf.jpg" alt="牛舎の仔牛">
-        <span class="no">02</span>
-        <h3>但馬牛を育てる</h3>
-        <p>その牧草を食べて、但馬牛の母牛と仔牛が育ちます。2019年の2頭から始まり、いまは約65頭。</p>
-      </li>
-      <li class="fade">
-        <img src="img/cycle-compost.jpg" alt="堆肥を運ぶトラクター">
-        <span class="no">03</span>
-        <h3>堆肥をつくる</h3>
-        <p>牛舎の牛ふんともみ殻を切り返して堆肥に。自社の田畑と、地域の農家さんの田畑に年間約1,000tを散布しています。</p>
-      </li>
-      <li class="fade">
-        <img src="img/rice-ripe.jpg" alt="実った稲">
-        <span class="no">04</span>
-        <h3>米・栗・野菜を育てる</h3>
-        <p>堆肥で土をつくり、農薬や化学肥料を控えて、コシヒカリや丹波栗、野菜を育てます。</p>
-      </li>
-      <li class="fade">
-        <img src="img/cycle-shop.jpg" alt="丹波の野菜の天ぷら">
-        <span class="no">05</span>
-        <h3>食卓へ届ける</h3>
-        <p>グループの飲食店で炊くお米は、すべてここで育てたもの。丹波栗は大阪・東京の飲食店や和菓子店へ届けています。</p>
-      </li>
-    </ol>
-    <p class="cycle-back fade">そして、稲刈りで出た稲わらともみ殻は、牛の敷料や堆肥としてまた牛舎へ戻ります。</p>
+    <p class="catch fade">外から持ち込まず、無駄を出さない。<br>草と牛と土と米が、ひとつの輪でつながっています。</p>
+    <div class="ring fade">
+      <svg class="ring-arrows" viewBox="0 0 600 600" aria-hidden="true">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e2c88f"/></marker></defs>
+        <circle cx="300" cy="300" r="215" fill="none" stroke="rgba(226,200,143,.35)" stroke-width="2" stroke-dasharray="4 8"/>
+        <g fill="none" stroke="#e2c88f" stroke-width="3" marker-end="url(#ah)"><path d="M387,104 A215,215 0 0,1 460,156"/><path d="M514,322 A215,215 0 0,1 486,408"/><path d="M345,510 A215,215 0 0,1 255,510"/><path d="M114,408 A215,215 0 0,1 86,322"/><path d="M140,156 A215,215 0 0,1 213,104"/></g>
+      </svg>
+      <div class="node n1"><img src="img/ill-grass.jpg" alt=""><b>牧草を育てる</b><span>耕作放棄地を牧草地に</span></div>
+      <div class="node n2"><img src="img/ill-cow.jpg" alt=""><b>但馬牛が食べる</b><span>輸入飼料にたよらない</span></div>
+      <div class="node n3"><img src="img/ill-compost.jpg" alt=""><b>堆肥をつくる</b><span>牛ふんともみ殻から</span></div>
+      <div class="node n4"><img src="img/ill-crops.jpg" alt=""><b>米・栗・野菜</b><span>堆肥で土をつくって育てる</span></div>
+      <div class="node n5"><img src="img/ill-straw.jpg" alt=""><b>稲わら・もみ殻</b><span>牛の寝床に、そして堆肥へ</span></div>
+      <div class="ring-center"><img src="img/logo-w.png" alt="丹波農商"><span>但馬・丹波の<br>ひとつの農場で</span></div>
+    </div>
+    <div class="ring-out">
+      <div class="fade"><img src="img/ill-table.jpg" alt=""><div><b>食卓へ</b><span>お米はグループの飲食店ですべて使い、丹波栗は大阪・東京の料理店や和菓子店へ。</span></div></div>
+      <div class="fade"><img src="img/ill-sea.jpg" alt=""><div><b>海へ（挑戦中）</b><span>ミネラル豊富な堆肥を海に届け、漁場を元気にするプロジェクトにも挑戦しています。</span></div></div>
+    </div>
   </div>
 </section>
 
@@ -148,6 +147,27 @@
         <p>毎日こまめに体調を見て、エサの食べ方や様子の変化をすぐにつかむ。元気で、病気に強い牛を育てることを何より大切にしています。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===== YouTube（tools/tanba_youtube.py が最新動画を差し込む） ===== -->
+<section id="youtube" class="yt">
+  <div class="wrap">
+    <h2 class="sec-title fade">YouTube</h2>
+    <p class="center fade sub-t">栗原優介「関わるすべてに喜びを。」 農業の現場を、農家目線で発信しています</p>
+    <!-- YT:START --><div class="yt-main"><iframe src="https://www.youtube-nocookie.com/embed/3kqbfjZaFxo" title="三菱の農機、解散へ。使っている農機はどうなる？" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><div class="yt-grid"><a class="yt-card" href="https://www.youtube.com/watch?v=JBLqvvwOtk0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/JBLqvvwOtk0/hqdefault.jpg" alt="" loading="lazy"><span>2050年、農地の2割が守れない？原因は草刈り</span></a><a class="yt-card" href="https://www.youtube.com/watch?v=Gd1UBjlhwf8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Gd1UBjlhwf8/hqdefault.jpg" alt="" loading="lazy"><span>米価3割安。農家は赤字です｜米余りで過去最悪へ</span></a><a class="yt-card" href="https://www.youtube.com/watch?v=GUftVd68Peg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/GUftVd68Peg/hqdefault.jpg" alt="" loading="lazy"><span>スギナを残すと草刈りが減る!? 畦管理の新常識を農家目線で解説</span></a><a class="yt-card" href="https://www.youtube.com/watch?v=J9gxhuY2Ykk" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/J9gxhuY2Ykk/hqdefault.jpg" alt="" loading="lazy"><span>農家の利益が消える!? 生産資材が過去最高…今すぐ見直すべき3つのポイント</span></a><a class="yt-card" href="https://www.youtube.com/watch?v=S6_9NrLooe8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/S6_9NrLooe8/hqdefault.jpg" alt="" loading="lazy"><span>食品消費税1％で農家は損する？現場目線でわかりやすく解説します</span></a></div><!-- YT:END -->
+    <p class="center fade" style="margin-top:28px"><a class="btn solid" href="https://www.youtube.com/@yusuke_kurihara?sub_confirmation=1" target="_blank" rel="noopener">チャンネル登録する</a></p>
+  </div>
+</section>
+
+<!-- ===== Instagram（公式の埋め込み。新しい投稿は自動で出る） ===== -->
+<section id="instagram" class="ig-t">
+  <div class="wrap">
+    <h2 class="sec-title fade">Instagram</h2>
+    <div class="insta fade">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/tambanousho/" data-instgrm-version="14" style="width:100%;max-width:540px"></blockquote>
+    </div>
+    <p class="center" style="margin-top:24px"><a class="btn solid" href="https://www.instagram.com/tambanousho/" target="_blank" rel="noopener">@tambanousho をフォロー</a></p>
   </div>
 </section>
 
@@ -217,5 +237,6 @@
   <small>© 株式会社丹波農商</small>
 </footer>
 <script src="store.js"></script>
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>

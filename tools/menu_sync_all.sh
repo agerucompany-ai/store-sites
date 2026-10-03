@@ -3,3 +3,4 @@
 cd "$(dirname "$0")/.."
 echo "=== $(date '+%Y-%m-%d %H:%M')"
 for s in naniwa washoku tempura; do /usr/bin/python3 tools/tabelog_menu.py $s --deploy; done
+/usr/bin/python3 tools/tanba_youtube.py --deploy

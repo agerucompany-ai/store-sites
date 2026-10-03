@@ -330,3 +330,122 @@ section{padding:96px 16px}
 }
 .tanba .biz-more{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:14px;color:var(--main);text-decoration:underline;text-underline-offset:4px}
 @media (max-width:800px){.tanba .site-header nav a.nav-reserve{margin:8px 16px 0;padding:10px 20px;text-align:center}}
+
+/* ---------- トップのスライド（会社サイトと同じ型。.has-slider のページだけ） ---------- */
+/* ---------- トップのスライド（任天堂トップ風：中央に大きく・左右を少し見せる） ---------- */
+.has-slider .slider{position:relative;background:#f1f2f5;padding:96px 0 44px;overflow:hidden;--sw:min(72vw,1040px);--gap:24px}
+.has-slider .slides{position:relative;height:calc(var(--sw) * .5625)}
+.has-slider .slide{position:absolute;top:0;left:50%;width:var(--sw);height:100%;margin-left:calc(var(--sw) / -2);border-radius:18px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(12,26,56,.18);transition:transform .7s cubic-bezier(.22,.8,.3,1),opacity .7s;color:#fff;text-decoration:none;display:block;background:#000}
+.has-slider .slide>img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.has-slider .slide:hover>img{transform:scale(1.03)}
+.has-slider .slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.6) 100%);pointer-events:none}
+.has-slider .slide .cap{position:absolute;left:32px;right:32px;bottom:26px;z-index:2;display:flex;align-items:flex-end;gap:18px}
+.has-slider .slide .cap-logo{height:min(13vw,120px);width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.has-slider .slide .cap-logo.wide{height:auto;width:min(26vw,260px)}
+.has-slider .slide .cap span{font-size:clamp(18px,2.2vw,28px);font-weight:600;letter-spacing:.08em;line-height:1.4;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.has-slider .slide .cap small{display:block;font-family:var(--sans);font-weight:400;font-size:clamp(12px,1.1vw,14px);letter-spacing:.05em;opacity:.95}
+.has-slider .slide-ai .ai-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0c1a38 0%,#2a5bbf 100%);display:flex;justify-content:flex-end;align-items:flex-end;padding-right:8%}
+.has-slider .slide-ai .ai-bg img{height:88%;width:auto}
+.has-slider .slide-ai .cap span{font-family:var(--sans);font-weight:900}
+.has-slider .slider .nav{position:absolute;top:calc(96px + var(--sw) * .28125);transform:translateY(-50%);z-index:5;width:48px;height:48px;border-radius:50%;border:0;
+  background:#fff;color:var(--main);font-size:30px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.has-slider .slider .prev{left:calc(50% - var(--sw) / 2 - 24px)}
+.has-slider .slider .next{right:calc(50% - var(--sw) / 2 - 24px)}
+.has-slider .slider .dots{display:flex;justify-content:center;gap:10px;margin-top:22px}
+.has-slider .slider .dots button{width:9px;height:9px;border-radius:50%;border:0;background:#c3c7d1;cursor:pointer;padding:0;transition:width .3s,background .3s}
+.has-slider .slider .dots button.on{width:26px;border-radius:5px;background:var(--main)}
+@media (max-width:800px){
+  .slider{padding:80px 0 32px;--sw:86vw;--gap:12px}
+  .slide{border-radius:12px}
+  .slide .cap{left:16px;right:16px;bottom:14px;gap:10px}
+  .slide .cap-logo{height:56px}
+  .slide .cap-logo.wide{width:120px}
+  .slider .nav{display:none}
+}
+@media (max-width:800px){
+  .slides{height:calc(var(--sw) * 1.2)}
+  .slide .cap{flex-direction:column;align-items:flex-start;gap:8px}
+  .slide .cap span{font-size:20px}
+  .slide .cap small{font-size:12px;line-height:1.6}
+  .slide-ai .ai-bg{justify-content:center;align-items:flex-start;padding:24px 0 0}
+  .slide-ai .ai-bg img{height:62%}
+}
+
+@media (max-width:800px){
+  .slides{height:calc(var(--sw) * 1.2)}
+  .slide .cap{flex-direction:column;align-items:flex-start;gap:8px}
+  .slide .cap span{font-size:20px}
+  .slide .cap small{font-size:12px;line-height:1.6}
+  .slide-ai .ai-bg{justify-content:center;align-items:flex-start;padding:24px 0 0}
+  .slide-ai .ai-bg img{height:62%}
+}
+.has-slider .site-header{background:var(--main);box-shadow:0 2px 12px rgba(0,0,0,.2)}
+.has-slider .slider{--sans:"Noto Sans JP",sans-serif}
+.has-slider .slider .dots button.on{background:var(--main)}
+.has-slider .slider .nav{color:var(--main)}
+
+/* ---------- 丹波：経営理念 ---------- */
+.tanba .philo-t{background:#f6f3ea}
+.tanba .ph-vision,.tanba .ph-mission{text-align:center;font-size:clamp(22px,3vw,34px);letter-spacing:.12em;font-weight:600;color:var(--main);margin-bottom:22px}
+.tanba .ph-vision small,.tanba .ph-mission small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.3em;color:var(--accent);font-weight:500}
+.tanba .ph-values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:36px 0 64px}
+.tanba .ph-values div{background:#fff;border-radius:10px;padding:20px 18px;display:flex;gap:14px;align-items:center;box-shadow:0 4px 16px rgba(47,74,42,.08)}
+.tanba .ph-values b{font-family:var(--sans);font-size:26px;color:var(--accent);font-weight:800}
+.tanba .ph-values span{font-size:16px;font-weight:600;line-height:1.6}
+.tanba .ph-body h3{font-size:22px;font-weight:600;margin-bottom:14px;color:var(--main)}
+
+/* ---------- 丹波：循環のイラスト図 ---------- */
+.tanba .ring{position:relative;width:min(100%,640px);aspect-ratio:1/1;margin:20px auto 0}
+.tanba .ring-arrows{position:absolute;inset:0;width:100%;height:100%}
+.tanba .ring .node{position:absolute;transform:translate(-50%,-50%);width:27%;text-align:center}
+.tanba .ring .node img{width:100%;aspect-ratio:1/1;border-radius:50%;object-fit:cover;border:4px solid #f7f3e8;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.tanba .ring .node b{display:block;font-size:15px;margin-top:8px;color:#fff}
+.tanba .ring .node span{display:block;font-size:11.5px;color:rgba(255,255,255,.8);line-height:1.5;font-family:var(--sans)}
+.tanba .ring-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;font-size:13px;line-height:1.7}
+.tanba .ring-center img{width:72px;margin:0 auto 6px;opacity:.95}
+.tanba .ring .n1{left:50.00%;top:14.17%}
+.tanba .ring .n2{left:84.08%;top:38.93%}
+.tanba .ring .n3{left:71.06%;top:78.99%}
+.tanba .ring .n4{left:28.94%;top:78.99%}
+.tanba .ring .n5{left:15.92%;top:38.93%}
+.tanba .ring-out{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:820px;margin:48px auto 0}
+.tanba .ring-out>div{display:flex;gap:16px;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:14px}
+.tanba .ring-out img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none}
+.tanba .ring-out b{display:block;color:#fff;font-size:16px}
+.tanba .ring-out span{font-size:13px;color:rgba(255,255,255,.85);line-height:1.8}
+
+/* ---------- 丹波：YouTube ---------- */
+.tanba .yt{background:#fff}
+.tanba .sub-t{color:var(--muted);font-size:14px;margin:-28px 0 32px}
+.tanba .yt-main{position:relative;aspect-ratio:16/9;max-width:860px;margin:0 auto 18px;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.tanba .yt-main iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.tanba .yt-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:860px;margin:0 auto}
+.tanba .yt-card{text-decoration:none;color:var(--ink);font-size:12px;line-height:1.5;font-family:var(--sans)}
+.tanba .yt-card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:6px}
+.tanba .ig-t{background:#f6f3ea}
+
+@media (max-width:800px){
+  .tanba .ph-values{grid-template-columns:1fr;margin:24px 0 40px}
+  .tanba .ring{width:100%}
+  .tanba .ring .node{width:30%}
+  .tanba .ring .node b{font-size:12px;margin-top:4px}
+  .tanba .ring .node span{display:none}
+  .tanba .ring-center{font-size:10px}
+  .tanba .ring-center img{width:44px}
+  .tanba .ring-out{grid-template-columns:1fr}
+  .tanba .yt-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:800px){
+  .has-slider .slides{height:calc(var(--sw) * 1.2)}
+  .has-slider .slide .cap{flex-direction:column;align-items:flex-start;gap:8px}
+  .has-slider .slide .cap span{font-size:20px}
+  .has-slider .slide .cap small{font-size:12px;line-height:1.6}
+}
+@media (max-width:800px){
+  .has-slider .slider{padding:80px 0 32px;--sw:86vw;--gap:12px}
+  .has-slider .slide{border-radius:12px}
+  .has-slider .slide .cap{left:16px;right:16px;bottom:14px;gap:10px}
+  .has-slider .slide .cap-logo{height:56px}
+  .has-slider .slider .nav{display:none}
+}
