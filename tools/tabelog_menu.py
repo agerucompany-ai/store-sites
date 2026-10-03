@@ -206,7 +206,7 @@ def render(store, cfg, data, name=None, reserve=None, switcher=""):
 </div>
 
 <footer class="site-footer">
-  <a href="https://ageruinc.com/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
+  <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
   運営：株式会社アゲル
   <small>© {cfg["name"]}</small>
 </footer>
