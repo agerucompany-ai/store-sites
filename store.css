@@ -264,3 +264,13 @@ section{padding:96px 16px}
   .tanba .company-table{grid-template-columns:6.5em 1fr;font-size:14px}
 }
 .tanba .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.22) 40%,rgba(0,0,0,.35))}
+
+/* ---------- 今の旬：食べログのメイン写真を流す（1段） ---------- */
+.h-row{overflow:hidden}
+.h-track{display:flex;gap:12px;width:max-content;animation:s-scroll 90s linear infinite}
+.h-row:hover .h-track{animation-play-state:paused}
+.h-card{flex:none;width:420px;aspect-ratio:16/9;overflow:hidden;border-radius:4px}
+.h-card img{width:100%;height:100%;object-fit:cover;display:block}
+.season .sec-title{margin-bottom:36px}
+@media (prefers-reduced-motion:reduce){.h-track{animation:none}.h-row{overflow-x:auto}}
+@media (max-width:800px){.h-card{width:280px}.h-track{gap:8px;animation-duration:70s}}

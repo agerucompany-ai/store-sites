@@ -99,6 +99,26 @@ def parse(page):
     return updated, [c for c in cats if c["items"]]
 
 
+def look_hash(path):
+    """見た目が同じ写真を見分けるための簡易ハッシュ（8x8の明暗差）。"""
+    try:
+        from PIL import Image
+        im = Image.open(path).convert("L").resize((9, 8))
+        px = list(im.getdata())
+        return "".join("1" if px[r * 9 + c] > px[r * 9 + c + 1] else "0" for r in range(8) for c in range(8))
+    except Exception:
+        return path.name
+
+
+def fetch_hero(url, outdir):
+    name = url.rsplit("/", 1)[1]
+    p = outdir / name
+    if not p.exists():
+        p.write_bytes(get(url, binary=True))
+        subprocess.run(["sips", "-Z", "1000", "-s", "formatOptions", "82", str(p)], capture_output=True)
+    return name
+
+
 def fetch_image(url, outdir):
     """食べログの画像を1回だけ落とす（ファイル名＝食べログのハッシュ）。"""
     h = re.search(r"([0-9a-f]{32})\.jpg", url)
@@ -110,47 +130,25 @@ def fetch_image(url, outdir):
     return name
 
 
-SEASON_FOOD = re.compile(r"旬|おすすめ|おススメ|オススメ|厳選")
-# ドリンクは品名で判定（カテゴリ名に「旬」が入っていても生ビール等が同居しているため）
-SEASON_DRINK = re.compile(r"旬|サングリア|ごろごろ|果肉|果実|桃|(?<!山)梨|柿|葡萄|ぶどう|巨峰|シャイン|マスカット|みかん|蜜柑|柚子|ゆず|苺|いちご|梅|林檎|りんご|日向夏|メロン|すだち|かぼす|スイカ|西瓜|パイン|マンゴー|ライチ|キウイ|洋梨|無花果|いちじく")
+def hero_images(url):
+    """食べログ店舗トップのメイン写真（HERO）の元画像URLを、並び順のまま返す。"""
+    page = get(url)
+    i = page.find("rstdtl-top-main-photos")
+    if i < 0:
+        return []
+    seg = page[i:i + 30000]
+    out = []
+    for m in re.finditer(r"resize/[0-9x]+c?/(restaurant/images/Rvw/(\d+)/([0-9a-f]{32})\.jpg)", seg):
+        u = "https://tblg.k-img.com/" + m.group(1)
+        if u not in [x[0] for x in out]:
+            out.append((u, int(m.group(2))))
+    return out
 
 
-def season_items(data, shop_label, page):
-    """旬・おすすめのカテゴリから写真つきの品を拾う（トップの流れる帯に使う）。"""
-    food, drink = [], []
-    for kind, _, cats in data:
-        for c in cats:
-            for it in c["items"]:
-                if not it.get("file"):
-                    continue
-                if kind == "料理" and (SEASON_FOOD.search(c["name"]) or it["name"].startswith("【旬】")):
-                    food.append(dict(it, shop=shop_label, page=page))
-                elif kind == "ドリンク" and SEASON_DRINK.search(it["name"]):
-                    drink.append(dict(it, shop=shop_label, page=page))
-    return food, drink
-
-
-def interleave(lists, limit):
-    """店ごとのリストを1品ずつ交互に並べ、同じ品名は1回だけにする。"""
-    out, seen = [], set()
-    for i in range(max((len(l) for l in lists), default=0)):
-        for l in lists:
-            if i < len(l) and l[i]["name"] not in seen:
-                seen.add(l[i]["name"])
-                out.append(l[i])
-    return out[:limit]
-
-
-def season_html(food, drink):
-    def row(items, cls):
-        cards = "".join(
-            f'<a class="s-card" href="{it["page"]}"><img src="menu-img/{it["file"]}" alt="{html.escape(it["name"])}" loading="lazy">'
-            f'<span class="s-shop">{html.escape(it["shop"])}</span><b>{html.escape(it["name"])}</b><span class="s-price">{html.escape(it["price"])}</span></a>'
-            for it in items)
-        # 同じ並びを2回置いて、端までいったら継ぎ目なしでループさせる
-        dup = cards.replace("<a ", '<a aria-hidden="true" tabindex="-1" ')
-        return f'<div class="s-row {cls}"><div class="s-track">{cards}{dup}</div></div>'
-    return row(food, "food") + row(drink, "drink")
+def hero_html(files):
+    cards = "".join(f'<div class="h-card"><img src="hero-img/{f}" alt="" loading="lazy"></div>' for f in files)
+    dup = cards.replace('<div class="h-card">', '<div class="h-card" aria-hidden="true">')
+    return f'<div class="h-row"><div class="h-track">{cards}{dup}</div></div>'
 
 
 def render(store, cfg, data, name=None, reserve=None, switcher=""):
@@ -246,11 +244,11 @@ def main():
         jobs = [(f"menu-{k}.html", url, f'{cfg["name"]} {label}', rsv, k) for k, label, url, rsv in cfg["shops"]]
     else:
         jobs = [("menu.html", cfg["url"], cfg["name"], cfg["reserve"], None)]
-    used, dump, foods, drinks = set(), {}, [], []
+    used, dump, heroes = set(), {}, {}
     for fname, url, name, rsv, key in jobs:
         data = build_page(url, imgdir)
-        f_, d_ = season_items(data, name.replace(cfg["name"], "").strip() or cfg["name"], fname)
-        foods.append(f_); drinks.append(d_)
+        for u, rid in hero_images(url):
+            heroes.setdefault(u, rid)
         used |= {it["file"] for _, _, cats in data for c in cats for it in c["items"] if it.get("file")}
         sw = ""
         if "shops" in cfg:
@@ -264,7 +262,28 @@ def main():
     idx = d / "index.html"
     t = idx.read_text()
     if "<!-- SEASON:START -->" in t:
-        block = season_html(interleave(foods, 40), interleave(drinks, 30))
+        # 全店のHEROから重複を除き、新しく載った写真（Rvw番号が大きい）順に12枚
+        hdir = d / "hero-img"
+        hdir.mkdir(exist_ok=True)
+        files = []
+        seen = set()
+        for u, _ in sorted(heroes.items(), key=lambda x: -x[1]):
+            if len(files) >= 12:
+                break
+            try:
+                f = fetch_hero(u, hdir)
+            except Exception as e:
+                print("HERO写真の取得失敗:", u, e)
+                continue
+            h = look_hash(hdir / f)  # 別名で上がった同じ写真を1枚にする
+            if h in seen:
+                continue
+            seen.add(h)
+            files.append(f)
+        for p in hdir.glob("*.jpg"):
+            if p.name not in files:
+                p.unlink()
+        block = hero_html(files)
         t = re.sub(r"<!-- SEASON:START -->.*?<!-- SEASON:END -->", lambda m: "<!-- SEASON:START -->" + block + "<!-- SEASON:END -->", t, flags=re.S)
         idx.write_text(t)
     for p in imgdir.glob("*.jpg"):  # どの店のメニューからも消えた写真は捨てる
@@ -275,7 +294,7 @@ def main():
 
     if "--deploy" in sys.argv:
         g = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True)
-        g("add", "-A", f"{store}/index.html", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
+        g("add", "-A", f"{store}/index.html", f"{store}/hero-img", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
         if not g("diff", "--cached", "--quiet").returncode:
             print("変更なし。公開しません。")
             return
