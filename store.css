@@ -293,3 +293,40 @@ section{padding:96px 16px}
 .tanba .company-table th{width:28%;white-space:nowrap;color:var(--accent);font-weight:600}
 .tanba .company-table a{color:#fff}
 @media (max-width:800px){.tanba .company-table th{width:34%;white-space:normal}}
+
+/* ---------- 丹波農商：丹波栗ページ（tanba/kuri.html） ---------- */
+.tanba .sub-hero{height:72vh;min-height:440px;max-height:720px}
+.tanba .sub-hero .bg{object-position:center 40%}
+.tanba .hero-text h1{font-weight:500;font-size:clamp(40px,6vw,72px);letter-spacing:.3em;text-indent:.3em;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.tanba .hero-text .hero-en{margin:0 0 6px;font-family:var(--sans);font-size:12px;letter-spacing:.4em}
+.tanba .kuri-points,.tanba .kuri-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px}
+.tanba .kuri-points img,.tanba .kuri-steps img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.tanba .kuri-points .no,.tanba .kuri-steps .no,.tanba .kuri-future .no{display:block;margin-top:14px;font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--accent)}
+.tanba .kuri-points h3,.tanba .kuri-steps h3{font-size:18px;font-weight:600;letter-spacing:.06em;margin:2px 0 8px;color:var(--main)}
+.tanba .kuri-points p,.tanba .kuri-steps p{font-size:14px;line-height:2}
+.tanba .dark .person .note{color:#fff}
+.tanba .kuri-products{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tanba .kuri-products li{border:1px solid rgba(255,255,255,.28);border-radius:6px;padding:18px 20px}
+.tanba .kuri-products h3{font-size:18px;font-weight:600;letter-spacing:.08em;color:var(--accent);margin-bottom:4px}
+.tanba .kuri-products h3 small{margin-left:10px;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.1em;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:1px 8px;vertical-align:3px}
+.tanba .kuri-products p{font-size:14px;line-height:1.9;color:rgba(255,255,255,.9)}
+.tanba .kuri-products li.trial{border-style:dashed}
+.tanba .kuri-note{margin-top:28px;font-size:13px;color:rgba(255,255,255,.8);text-align:center}
+.tanba .kuri-future{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.tanba .kuri-future>div{border-top:1px solid rgba(255,255,255,.3);padding-top:4px}
+.tanba .kuri-future h3{font-size:19px;font-weight:600;letter-spacing:.08em;margin:2px 0 8px}
+.tanba .kuri-future p{font-size:14px;line-height:2;color:rgba(255,255,255,.9)}
+.tanba #person .person>img{aspect-ratio:1/1}
+.tanba .dark .tel-big a{color:#fff}
+@media (max-width:800px){
+  .tanba .sub-hero{height:64vh;min-height:380px}
+  .tanba .hero-text h1{letter-spacing:.2em;text-indent:.2em}
+  .tanba .hero-text p{letter-spacing:.08em}
+  .tanba .kuri-points,.tanba .kuri-steps{grid-template-columns:1fr;gap:36px}
+  .tanba .kuri-products{grid-template-columns:1fr;gap:10px}
+  .tanba .kuri-products li{padding:14px 16px}
+  .tanba .kuri-future{grid-template-columns:1fr;gap:24px}
+  .tanba .kuri-note{text-align:left}
+}
+.tanba .biz-more{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:14px;color:var(--main);text-decoration:underline;text-underline-offset:4px}
+@media (max-width:800px){.tanba .site-header nav a.nav-reserve{margin:8px 16px 0;padding:10px 20px;text-align:center}}
