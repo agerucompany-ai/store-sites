@@ -449,3 +449,30 @@ section{padding:96px 16px}
   .has-slider .slide .cap-logo{height:56px}
   .has-slider .slider .nav{display:none}
 }
+
+/* ---------- 丹波農商: ゲーム「丹波農商 牧場物語」の紹介 ---------- */
+.tanba .game-t{background:linear-gradient(180deg,#eef5e6 0%,#f7f3e8 100%)}
+.tanba .game-box{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;max-width:1060px;margin:0 auto}
+.tanba .game-copy>p{font-size:15px;line-height:2.05;color:var(--ink)}
+.tanba .game-feat{list-style:none;margin:22px 0 28px;padding:0;display:grid;gap:10px}
+.tanba .game-feat li{background:#fff;border-radius:10px;padding:12px 16px;font-family:var(--sans);font-size:13.5px;line-height:1.7;color:var(--muted);box-shadow:0 2px 10px rgba(47,74,42,.06)}
+.tanba .game-feat li b{display:block;font-size:15px;font-weight:500;color:var(--main);margin-bottom:2px}
+.tanba .game-cta{margin:0 0 22px}
+.tanba .game-play{font-size:17px;padding:16px 40px;letter-spacing:.1em;box-shadow:0 6px 18px rgba(47,74,42,.25)}
+.tanba .game-a2hs{display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tanba .game-a2hs p{font-family:var(--sans);font-size:12.5px;line-height:1.9;color:var(--muted);margin:0}
+.tanba .game-a2hs b{font-weight:500;color:var(--main)}
+.tanba .game-qr{flex:0 0 auto;width:104px;height:104px;border-radius:8px;background:#fff}
+.tanba .game-shots{display:flex;gap:16px;justify-content:center;align-items:center}
+.tanba .game-shots .phone{margin:0;flex:1 1 0;max-width:210px;border-radius:26px;padding:7px;background:#1f2320;box-shadow:0 20px 44px rgba(31,35,32,.28)}
+.tanba .game-shots .phone:nth-child(2){transform:translateY(-26px)}
+.tanba .game-shots .phone img{display:block;width:100%;aspect-ratio:390/844;object-fit:cover;border-radius:20px}
+@media (max-width:800px){
+  .tanba .game-box{grid-template-columns:1fr;gap:30px}
+  .tanba .game-shots{order:-1;gap:10px}
+  .tanba .game-shots .phone{border-radius:18px;padding:5px}
+  .tanba .game-shots .phone img{border-radius:14px}
+  .tanba .game-shots .phone:nth-child(2){transform:translateY(-14px)}
+  .tanba .game-play{display:block;text-align:center}
+  .tanba .game-qr,.tanba .game-a2hs .pc-only{display:none}
+}
