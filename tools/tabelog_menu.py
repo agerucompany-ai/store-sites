@@ -20,6 +20,14 @@ STORES = {
                 ("index.html#shop", "店舗詳細"), ("https://yoyaku.takoyakinaniwa.com/", "ご予約")],
         "reserve": "https://yoyaku.takoyakinaniwa.com/",
     },
+    "washoku": {
+        "url": "https://tabelog.com/osaka/A2701/A270101/27156689/",
+        "name": "和食 大塩",
+        "color": "#371501",
+        "nav": [("index.html#menu", "看板メニュー"), ("menu.html", "メニュー"), ("index.html#owner", "店主挨拶"),
+                ("index.html#shop", "店舗詳細"), ("https://yoyaku.tempuraoshio.com/dai3washoku", "ご予約")],
+        "reserve": "https://yoyaku.tempuraoshio.com/dai3washoku",
+    },
 }
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
 
