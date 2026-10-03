@@ -75,7 +75,7 @@ def parse(page):
             cats[-1]["items"].append({
                 "name": text(title.group(1)),
                 "price": text(price.group(1)) if price else "",
-                "desc": text(ex.group(1)) if ex else "",
+                "desc": re.sub(r"\n\s*\n+", "\n", text(ex.group(1))).replace("\n　", "\n") if ex else "",
                 "recommend": "feature-label--recommend" in t,
                 "img": img.group(1) if img else "",
             })
