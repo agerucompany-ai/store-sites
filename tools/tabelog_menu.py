@@ -110,6 +110,49 @@ def fetch_image(url, outdir):
     return name
 
 
+SEASON_FOOD = re.compile(r"旬|おすすめ|おススメ|オススメ|厳選")
+# ドリンクは品名で判定（カテゴリ名に「旬」が入っていても生ビール等が同居しているため）
+SEASON_DRINK = re.compile(r"旬|サングリア|ごろごろ|果肉|果実|桃|(?<!山)梨|柿|葡萄|ぶどう|巨峰|シャイン|マスカット|みかん|蜜柑|柚子|ゆず|苺|いちご|梅|林檎|りんご|日向夏|メロン|すだち|かぼす|スイカ|西瓜|パイン|マンゴー|ライチ|キウイ|洋梨|無花果|いちじく")
+
+
+def season_items(data, shop_label, page):
+    """旬・おすすめのカテゴリから写真つきの品を拾う（トップの流れる帯に使う）。"""
+    food, drink = [], []
+    for kind, _, cats in data:
+        for c in cats:
+            for it in c["items"]:
+                if not it.get("file"):
+                    continue
+                if kind == "料理" and (SEASON_FOOD.search(c["name"]) or it["name"].startswith("【旬】")):
+                    food.append(dict(it, shop=shop_label, page=page))
+                elif kind == "ドリンク" and SEASON_DRINK.search(it["name"]):
+                    drink.append(dict(it, shop=shop_label, page=page))
+    return food, drink
+
+
+def interleave(lists, limit):
+    """店ごとのリストを1品ずつ交互に並べ、同じ品名は1回だけにする。"""
+    out, seen = [], set()
+    for i in range(max((len(l) for l in lists), default=0)):
+        for l in lists:
+            if i < len(l) and l[i]["name"] not in seen:
+                seen.add(l[i]["name"])
+                out.append(l[i])
+    return out[:limit]
+
+
+def season_html(food, drink):
+    def row(items, cls):
+        cards = "".join(
+            f'<a class="s-card" href="{it["page"]}"><img src="menu-img/{it["file"]}" alt="{html.escape(it["name"])}" loading="lazy">'
+            f'<span class="s-shop">{html.escape(it["shop"])}</span><b>{html.escape(it["name"])}</b><span class="s-price">{html.escape(it["price"])}</span></a>'
+            for it in items)
+        # 同じ並びを2回置いて、端までいったら継ぎ目なしでループさせる
+        dup = cards.replace("<a ", '<a aria-hidden="true" tabindex="-1" ')
+        return f'<div class="s-row {cls}"><div class="s-track">{cards}{dup}</div></div>'
+    return row(food, "food") + row(drink, "drink")
+
+
 def render(store, cfg, data, name=None, reserve=None, switcher=""):
     name = name or cfg["name"]
     reserve = reserve or cfg["reserve"]
@@ -203,9 +246,11 @@ def main():
         jobs = [(f"menu-{k}.html", url, f'{cfg["name"]} {label}', rsv, k) for k, label, url, rsv in cfg["shops"]]
     else:
         jobs = [("menu.html", cfg["url"], cfg["name"], cfg["reserve"], None)]
-    used, dump = set(), {}
+    used, dump, foods, drinks = set(), {}, [], []
     for fname, url, name, rsv, key in jobs:
         data = build_page(url, imgdir)
+        f_, d_ = season_items(data, name.replace(cfg["name"], "").strip() or cfg["name"], fname)
+        foods.append(f_); drinks.append(d_)
         used |= {it["file"] for _, _, cats in data for c in cats for it in c["items"] if it.get("file")}
         sw = ""
         if "shops" in cfg:
@@ -216,6 +261,12 @@ def main():
         dump[fname] = [{"kind": l, "updated": u, "categories": c} for l, u, c in data]
         n = sum(len(c["items"]) for _, _, cats in data for c in cats)
         print(f"{name}: {n}品 / 更新日 {max(u for _, u, _ in data)}")
+    idx = d / "index.html"
+    t = idx.read_text()
+    if "<!-- SEASON:START -->" in t:
+        block = season_html(interleave(foods, 40), interleave(drinks, 30))
+        t = re.sub(r"<!-- SEASON:START -->.*?<!-- SEASON:END -->", lambda m: "<!-- SEASON:START -->" + block + "<!-- SEASON:END -->", t, flags=re.S)
+        idx.write_text(t)
     for p in imgdir.glob("*.jpg"):  # どの店のメニューからも消えた写真は捨てる
         if p.name not in used:
             p.unlink()
@@ -224,7 +275,7 @@ def main():
 
     if "--deploy" in sys.argv:
         g = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True)
-        g("add", "-A", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
+        g("add", "-A", f"{store}/index.html", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
         if not g("diff", "--cached", "--quiet").returncode:
             print("変更なし。公開しません。")
             return
