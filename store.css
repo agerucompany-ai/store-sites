@@ -274,3 +274,22 @@ section{padding:96px 16px}
 .season .sec-title{margin-bottom:36px}
 @media (prefers-reduced-motion:reduce){.h-track{animation:none}.h-row{overflow-x:auto}}
 @media (max-width:800px){.h-card{width:280px}.h-track{gap:8px;animation-duration:70s}}
+.tanba .next-biz{margin-top:48px;border:1px solid var(--line);border-left:4px solid var(--accent);padding:20px 24px;background:#faf8f4}
+.tanba .next-biz h3{font-size:18px;font-weight:600;margin-bottom:6px}
+.tanba .next-biz p{font-size:14px;line-height:1.9}
+.tanba .team-list p{margin-bottom:.3em;font-size:14px}
+.tanba .team-list b{display:inline-block;min-width:7em}
+.tanba .tel-big{font-size:22px;letter-spacing:.08em;margin:16px 0 20px}
+.tanba .tel-big a{text-decoration:none;color:var(--main)}
+.tanba .site-footer small a{color:inherit}
+.tanba .dark .person p{color:#fff}
+.tanba .dark .cycle-steps h3{color:#fff}
+.tanba .dark .cycle-steps p{color:rgba(255,255,255,.85)}
+.tanba .dark .cycle-steps .no{color:var(--accent)}
+.tanba .dark .cycle-back{color:#fff;border-color:rgba(255,255,255,.3)}
+.tanba .company-box{display:block;max-width:760px;margin:0 auto;width:100%}
+.tanba .company-table{display:table;width:100%;border-collapse:collapse;font-size:15px}
+.tanba .company-table th,.tanba .company-table td{text-align:left;padding:14px 8px;border-bottom:1px solid rgba(255,255,255,.2);vertical-align:top}
+.tanba .company-table th{width:28%;white-space:nowrap;color:var(--accent);font-weight:600}
+.tanba .company-table a{color:#fff}
+@media (max-width:800px){.tanba .company-table th{width:34%;white-space:normal}}
