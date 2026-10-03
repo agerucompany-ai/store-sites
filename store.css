@@ -139,3 +139,43 @@ section{padding:96px 16px}
   .menu-cat .desc{font-size:12px}
   .insta{min-height:0}
 }
+
+/* 店舗が複数ある業態のメニュー：店の切替 */
+.shop-switch{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:16px}
+.shop-switch a{font-family:var(--sans);font-size:12px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:4px 12px}
+.shop-switch a.on{background:#fff;color:var(--main)}
+
+/* ---------- 天ぷらとワイン大塩（店舗一覧型） ---------- */
+.catch{text-align:center;font-size:clamp(15px,1.9vw,20px);line-height:2.3;letter-spacing:.08em;margin-bottom:48px}
+.menu-grid.photos img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.sub{margin:-36px 0 40px;opacity:.75;font-family:var(--sans);font-size:13px;letter-spacing:.2em}
+.shop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.shop-card{background:#fff;color:var(--ink);display:grid;grid-template-columns:2fr 3fr;overflow:hidden}
+.shop-card>img{width:100%;height:100%;min-height:220px;object-fit:cover}
+.shop-card .body{padding:20px 22px}
+.shop-card .area{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--accent)}
+.shop-card h3{font-size:20px;font-weight:600;letter-spacing:.06em;margin:2px 0 6px}
+.shop-card .addr{font-size:13px;line-height:1.7;color:var(--muted)}
+.shop-card .tel{display:inline-block;margin:6px 0 8px;font-size:15px;text-decoration:none;color:var(--main);font-weight:600}
+.shop-card details{font-size:13px;border-top:1px solid var(--line);padding-top:8px}
+.shop-card summary{cursor:pointer;font-family:var(--sans);font-size:12px;color:var(--muted)}
+.shop-card .hours{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:8px 0;line-height:1.6}
+.shop-card .hours dt{font-weight:600;white-space:nowrap}
+.shop-card .note{font-size:12px;color:var(--muted);line-height:1.6}
+.shop-card .btns{justify-content:flex-start;margin-top:12px;gap:8px}
+.shop-card .btn{padding:8px 20px;font-size:13px}
+.btn.line{background:#fff;color:var(--main);border:1px solid var(--main)}
+.sdgs .band{width:100%;height:220px;object-fit:cover;margin-bottom:32px}
+.narrow{max-width:760px;margin:0 auto}
+.sdgs p{font-size:15px;line-height:2.1;margin-bottom:1em}
+.sdgs .center{margin-top:24px}
+@media (max-width:900px){.shop-grid{grid-template-columns:1fr}}
+@media (max-width:800px){
+  .catch{font-size:14px;text-align:left;margin-bottom:28px}
+  .catch br{display:none}
+  .menu-grid.photos{grid-template-columns:repeat(3,1fr);gap:8px}
+  .sub{margin:-20px 0 24px}
+  .shop-card{grid-template-columns:1fr}
+  .shop-card>img{height:200px;min-height:0}
+  .sdgs .band{height:140px}
+}

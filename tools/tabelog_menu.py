@@ -28,6 +28,23 @@ STORES = {
                 ("index.html#shop", "店舗詳細"), ("https://yoyaku.tempuraoshio.com/dai3washoku", "ご予約")],
         "reserve": "https://yoyaku.tempuraoshio.com/dai3washoku",
     },
+    # 天ぷらとワイン大塩は店ごとにメニューが違うので menu-<店>.html を店の数だけ作る
+    "tempura": {
+        "name": "天ぷらとワイン 大塩",
+        "color": "#1c1c1c",
+        "nav": [("index.html#concept", "旬をアゲル"), ("index.html#menu", "看板メニュー"), ("index.html#shops", "店舗一覧"),
+                ("index.html#sdgs", "SDGs")],
+        "shops": [
+            ("yurakucho", "有楽町店", "https://tabelog.com/tokyo/A1301/A130102/13294269/", "https://www.hotpepper.jp/strJ003829013/yoyaku/hpds/"),
+            ("marunouchi", "丸の内店", "https://tabelog.com/tokyo/A1302/A130201/13258449/", "https://yoyaku.toreta.in/tempura-oshio-marunouchi"),
+            ("hibiya", "日比谷店", "https://tabelog.com/tokyo/A1301/A130103/13250016/", "https://www.hotpepper.jp/strJ003807221/yoyaku/hpds/"),
+            ("nakano", "中野店", "https://tabelog.com/tokyo/A1319/A131902/13250017/", "https://yoyaku.toreta.in/tempura-oshio-nakano"),
+            ("tenma", "天満市場店", "https://tabelog.com/osaka/A2701/A270103/27112353/", "https://yoyaku.tempuraoshio.com/tenma"),
+            ("umeda", "梅田店", "https://tabelog.com/osaka/A2701/A270101/27108066/", "https://yoyaku.tempuraoshio.com/umeda"),
+            ("dai3", "大阪駅前第三ビル店", "https://tabelog.com/osaka/A2701/A270101/27103689/", "https://yoyaku.tempuraoshio.com/dai3"),
+            ("ten5", "天五横丁店", "https://tabelog.com/osaka/A2701/A270103/27100720/", "https://yoyaku.tempuraoshio.com/ten5"),
+        ],
+    },
 }
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
 
@@ -93,7 +110,9 @@ def fetch_image(url, outdir):
     return name
 
 
-def render(store, cfg, data):
+def render(store, cfg, data, name=None, reserve=None, switcher=""):
+    name = name or cfg["name"]
+    reserve = reserve or cfg["reserve"]
     def esc(s):
         return html.escape(s).replace("\n", "<br>")
     nav = "\n".join(f'    <a href="{u}">{l}</a>' for u, l in cfg["nav"])
@@ -116,8 +135,8 @@ def render(store, cfg, data):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>メニュー｜{cfg["name"]}</title>
-<meta name="description" content="{cfg["name"]}の料理・ドリンクメニュー（税込価格）。">
+<title>メニュー｜{name}</title>
+<meta name="description" content="{name}の料理・ドリンクメニュー（税込価格）。">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
@@ -134,15 +153,15 @@ def render(store, cfg, data):
 </header>
 
 <div class="menu-head">
-  <img src="img/logo.png" alt="{cfg["name"]}">
-  <h1>メニュー</h1>
+  <img src="img/logo.png" alt="{name}">
+  <h1>メニュー</h1>{switcher}
   <p>税込価格／{updated} 時点</p>
 </div>
 <div class="menu-tabs">{"".join(tabs)}</div>
 <div class="menu-body">
 {"".join(secs)}
 <p class="menu-note">※ 仕入れ状況により内容・価格が変わる場合があります。</p>
-<p class="center"><a class="btn solid" href="{cfg["reserve"]}" target="_blank" rel="noopener">ご予約はこちら</a></p>
+<p class="center"><a class="btn solid" href="{reserve}" target="_blank" rel="noopener">ご予約はこちら</a></p>
 </div>
 
 <footer class="site-footer">
@@ -156,17 +175,12 @@ def render(store, cfg, data):
 """
 
 
-def main():
-    store = sys.argv[1]
-    cfg = STORES[store]
-    d = ROOT / store
-    imgdir = d / "menu-img"
-    imgdir.mkdir(exist_ok=True)
+def build_page(url, imgdir):
     data = []
     for label, path in (("料理", "dtlmenu/"), ("ドリンク", "dtlmenu/drink/")):
-        updated, cats = parse(get(cfg["url"] + path))
-        if not cats:
-            sys.exit(f"{label}メニューが読めませんでした（食べログの構造変更かアクセス制限）。何も書き換えません。")
+        updated, cats = parse(get(url + path))
+        if not cats and label == "料理":
+            sys.exit(f"{url} の料理メニューが読めませんでした（食べログの構造変更かアクセス制限）。何も書き換えません。")
         for c in cats:
             for it in c["items"]:
                 if it["img"]:
@@ -174,20 +188,43 @@ def main():
                         it["file"] = fetch_image(it["img"], imgdir)
                     except Exception as e:
                         print("写真の取得失敗:", it["name"], e)
-        data.append((label, updated, cats))
-    used = {it["file"] for _, _, cats in data for c in cats for it in c["items"] if it.get("file")}
-    for p in imgdir.glob("*.jpg"):  # メニューから消えた写真は捨てる
+        if cats:
+            data.append((label, updated, cats))
+    return data
+
+
+def main():
+    store = sys.argv[1]
+    cfg = STORES[store]
+    d = ROOT / store
+    imgdir = d / "menu-img"
+    imgdir.mkdir(exist_ok=True)
+    if "shops" in cfg:
+        jobs = [(f"menu-{k}.html", url, f'{cfg["name"]} {label}', rsv, k) for k, label, url, rsv in cfg["shops"]]
+    else:
+        jobs = [("menu.html", cfg["url"], cfg["name"], cfg["reserve"], None)]
+    used, dump = set(), {}
+    for fname, url, name, rsv, key in jobs:
+        data = build_page(url, imgdir)
+        used |= {it["file"] for _, _, cats in data for c in cats for it in c["items"] if it.get("file")}
+        sw = ""
+        if "shops" in cfg:
+            on = ' class="on"'
+            sw = '<div class="shop-switch">' + "".join(
+                f'<a href="menu-{k}.html"{on if k == key else ""}>{l}</a>' for k, l, _, _ in cfg["shops"]) + "</div>"
+        (d / fname).write_text(render(store, cfg, data, name=name, reserve=rsv, switcher=sw))
+        dump[fname] = [{"kind": l, "updated": u, "categories": c} for l, u, c in data]
+        n = sum(len(c["items"]) for _, _, cats in data for c in cats)
+        print(f"{name}: {n}品 / 更新日 {max(u for _, u, _ in data)}")
+    for p in imgdir.glob("*.jpg"):  # どの店のメニューからも消えた写真は捨てる
         if p.name not in used:
             p.unlink()
-    (d / "menu.json").write_text(json.dumps([{"kind": l, "updated": u, "categories": c} for l, u, c in data],
-                                            ensure_ascii=False, indent=1))
-    (d / "menu.html").write_text(render(store, cfg, data))
-    n = sum(len(c["items"]) for _, _, cats in data for c in cats)
-    print(f"{store}: {n}品 / 写真{len(used)}枚 / 更新日 {max(u for _, u, _ in data)}")
+    (d / "menu.json").write_text(json.dumps(dump if "shops" in cfg else dump["menu.html"], ensure_ascii=False, indent=1))
+    print(f"{store}: 写真{len(used)}枚")
 
     if "--deploy" in sys.argv:
         g = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True)
-        g("add", f"{store}/menu.html", f"{store}/menu.json", f"{store}/menu-img")
+        g("add", "-A", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
         if not g("diff", "--cached", "--quiet").returncode:
             print("変更なし。公開しません。")
             return

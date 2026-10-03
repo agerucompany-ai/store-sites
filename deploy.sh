@@ -5,8 +5,8 @@ cd "$(dirname "$0")"
 source ~/.github_env
 T=${GITHUB_TOKEN:-$GH_TOKEN}
 ./build.sh
-typeset -A REPO=(washoku washoku-oshio-site naniwa takoyakinaniwa-site)
-targets=(${@:-all}); [[ $targets == all ]] && targets=(washoku naniwa)
+typeset -A REPO=(washoku washoku-oshio-site naniwa takoyakinaniwa-site tempura tempura-oshio-site)
+targets=(${@:-all}); [[ $targets == all ]] && targets=(washoku naniwa tempura)
 for s in $targets; do
   cd dist/$s
   git init -q -b gh-pages && git config user.name agerucompany-ai && git config user.email ageru.company@gmail.com
