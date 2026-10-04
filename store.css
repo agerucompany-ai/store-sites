@@ -524,3 +524,18 @@ section{padding:96px 16px}
 .tanba .ring-promise{text-align:center;font-size:14px;line-height:2;color:rgba(255,255,255,.85);margin-top:28px}
 @media (max-width:800px){.tanba .ring-why-grid{grid-template-columns:1fr}.tanba .ring-quote br,.tanba .ring-promise br{display:none}}
 .tanba .sub-hero::after{background:radial-gradient(ellipse at center,rgba(0,0,0,.55) 0%,rgba(0,0,0,.25) 70%)}
+.tanba .ushi-voice p{font-size:15.5px;line-height:2.1;margin-bottom:1em}
+.tanba .ushi-voice .sign{text-align:right;font-weight:600;margin-top:1.5em}
+.tanba .ushi-history{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tanba .ushi-history li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:12px;overflow:hidden}
+.tanba .ushi-history img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tanba .ushi-history b{display:block;color:var(--accent);font-family:var(--sans);font-size:18px;padding:12px 16px 0}
+.tanba .ushi-history span{display:block;padding:4px 16px 16px;font-size:14px;line-height:1.8;color:rgba(255,255,255,.9)}
+.tanba .ig-gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:8px}
+.tanba .ig-gallery img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.tanba .ig-gallery .big{grid-column:span 2;grid-row:span 2}
+@media (max-width:800px){.tanba .ushi-history{grid-template-columns:1fr}.tanba .ig-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:140px}}
+.tanba .ig-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:900px;margin:0 auto}
+.tanba .ig-wall img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px}
+.tanba .sign-s{text-align:right;font-size:14px;opacity:.9}
+@media (max-width:800px){.tanba .ig-wall{grid-template-columns:repeat(2,1fr)}}
