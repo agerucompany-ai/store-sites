@@ -476,6 +476,12 @@ section{padding:96px 16px}
   .tanba .game-play{display:block;text-align:center}
   .tanba .game-qr,.tanba .game-a2hs .pc-only{display:none}
 }
+.tanba .kuri-brand{font-size:clamp(56px,11vw,120px)!important;letter-spacing:.08em;line-height:1.1;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+.tanba .kuri-brand small{display:block;font-size:.38em;letter-spacing:.3em;margin-bottom:6px}
+.tanba .hero-by{margin-top:14px;font-family:var(--sans);font-size:13px;letter-spacing:.12em;opacity:.95}
+.tanba .ig-card{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:640px;margin:0 auto;text-decoration:none;color:var(--ink);position:relative}
+.tanba .ig-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px}
+.tanba .ig-card span{grid-column:1/-1;text-align:center;font-family:var(--sans);font-size:14px;margin-top:6px}
 
 /* ---------- 丹波農商：但馬牛ページ（tanba/ushi.html） ---------- */
 .tanba .ushi-stats{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
@@ -517,3 +523,4 @@ section{padding:96px 16px}
 .tanba .ring-why-grid span{font-size:14px;line-height:1.9;color:rgba(255,255,255,.88)}
 .tanba .ring-promise{text-align:center;font-size:14px;line-height:2;color:rgba(255,255,255,.85);margin-top:28px}
 @media (max-width:800px){.tanba .ring-why-grid{grid-template-columns:1fr}.tanba .ring-quote br,.tanba .ring-promise br{display:none}}
+.tanba .sub-hero::after{background:radial-gradient(ellipse at center,rgba(0,0,0,.55) 0%,rgba(0,0,0,.25) 70%)}
