@@ -2,7 +2,7 @@
  "menu-yurakucho.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "一品",
@@ -48,7 +48,7 @@
        "file": "9dc1ef12cd45365a1210bcadbfdc3fba.jpg"
       },
       {
-       "name": "カツオ塩たたき",
+       "name": "カツオ",
        "price": "979円",
        "desc": "",
        "recommend": false,
@@ -80,7 +80,7 @@
        "file": "1275e864136d9c2a44411b839a9af3dd.jpg"
       },
       {
-       "name": "牛すじパルミジャーノ４切れ",
+       "name": "牛すじパルミジャーノ",
        "price": "979円",
        "desc": "焼いたバケットに自家製牛すじを乗せ仕上げにパルミジャーノをかけた至極の逸品です",
        "recommend": false,
@@ -108,15 +108,23 @@
        "file": "a4089d469f403f4ac175a7e882475457.jpg"
       },
       {
-       "name": "太刀魚",
+       "name": "梅紫蘇サンマ",
        "price": "429円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_645211b9e0ff734c2a4ed19eb363b80e.jpg",
+       "file": "645211b9e0ff734c2a4ed19eb363b80e.jpg"
+      },
+      {
+       "name": "太刀魚",
+       "price": "319円",
        "desc": "",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/381575/640x640_rect_8940e36861cc7cb69e9fbff7046db0fd.jpg",
        "file": "8940e36861cc7cb69e9fbff7046db0fd.jpg"
       },
       {
-       "name": "じゃがいも天　自家製ホワイトソース",
+       "name": "じゃがいも　自家製ホワイトソース",
        "price": "539円",
        "desc": "",
        "recommend": false,
@@ -131,12 +139,12 @@
        "file": "1f144cd93001c0994a0be721163bfce8.jpg"
       },
       {
-       "name": "鱧(ハモ)",
+       "name": "銀杏 3本",
        "price": "429円",
        "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_ef40381e2c805297b548723f8cfd8fcb.jpg",
-       "file": "ef40381e2c805297b548723f8cfd8fcb.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_ac33bba15958a9c675d81888b6124f24.jpg",
+       "file": "ac33bba15958a9c675d81888b6124f24.jpg"
       }
      ]
     },
@@ -185,7 +193,7 @@
       },
       {
        "name": "海老",
-       "price": "319円",
+       "price": "429円",
        "desc": "",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_de841a46449dee0829f8719ecb9e9309.jpg",
@@ -339,7 +347,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "スパークリングワイン",
@@ -1043,7 +1051,7 @@
  "menu-marunouchi.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -1125,14 +1133,6 @@
        "img": ""
       },
       {
-       "name": "新サンマ炙り刺し",
-       "price": "869円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_906f179163f936d2012728dcd01e0544.jpg",
-       "file": "906f179163f936d2012728dcd01e0544.jpg"
-      },
-      {
        "name": "牛スジだし巻き玉子",
        "price": "759円",
        "desc": "Japanese omelet with savory beef on top",
@@ -1170,6 +1170,14 @@
      "name": "厳選天ぷら",
      "items": [
       {
+       "name": "いちじくゴルゴンゾーラ１ヶ",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_6eac888ec6cdc613506e3c34ee509bd5.jpg",
+       "file": "6eac888ec6cdc613506e3c34ee509bd5.jpg"
+      },
+      {
        "name": "万願寺とうがらし　1本",
        "price": "319円",
        "desc": "",
@@ -1186,12 +1194,12 @@
        "file": "6b1d018e762f47fc8c06652b6281288e.jpg"
       },
       {
-       "name": "鱧(ハモ)～梅大葉～　１ヶ",
+       "name": "さんま梅紫蘇巻き2ケ",
        "price": "429円",
        "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_7b33f472bdbea89e26c1c62182350c1f.jpg",
-       "file": "7b33f472bdbea89e26c1c62182350c1f.jpg"
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_085e0afa27ac6da7922955415e9c3fef.jpg",
+       "file": "085e0afa27ac6da7922955415e9c3fef.jpg"
       },
       {
        "name": "舞茸１ヶ",
@@ -1426,7 +1434,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "お飲み物",
@@ -1913,7 +1921,7 @@
  "menu-hibiya.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -1949,6 +1957,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/381575/640x640_rect_55c8e35ecd038e754a04e33603317d35.jpg",
        "file": "55c8e35ecd038e754a04e33603317d35.jpg"
+      },
+      {
+       "name": "いちじくブリュレとマスカルポーネ",
+       "price": "759円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_7e45bbcc854b02de02b320de81272d8c.jpg",
+       "file": "7e45bbcc854b02de02b320de81272d8c.jpg"
       }
      ]
     },
@@ -1962,14 +1978,6 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/8adae5cca0c6611feb1cc46baed91e8b.jpg",
        "file": "8adae5cca0c6611feb1cc46baed91e8b.jpg"
-      },
-      {
-       "name": "おつまみネギ漬け",
-       "price": "319円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_344d62669857bf3517c0866ae1afe05a.jpg",
-       "file": "344d62669857bf3517c0866ae1afe05a.jpg"
       },
       {
        "name": "自家製ポテトサラダ",
@@ -2012,14 +2020,6 @@
        "file": "b6366eff7a6af27bf4637b8dd8ee0356.jpg"
       },
       {
-       "name": "生インドマグロ刺し",
-       "price": "1,199円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_03c6e30446586af23015d0cde0172bb2.jpg",
-       "file": "03c6e30446586af23015d0cde0172bb2.jpg"
-      },
-      {
        "name": "自家製スモークチーズ",
        "price": "319円",
        "desc": "Home made smoked cheese",
@@ -2041,14 +2041,6 @@
        "desc": "",
        "recommend": false,
        "img": ""
-      },
-      {
-       "name": "パリパリ肉味噌万願寺",
-       "price": "649円",
-       "desc": "パリパリの万願寺を自家製の肉味噌を乗せてお召し上がり下さい！",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380529/640x640_rect_ef2e2140a15b26a8f0b1b96e68ec616a.jpg",
-       "file": "ef2e2140a15b26a8f0b1b96e68ec616a.jpg"
       },
       {
        "name": "生インドマグロ中トロ刺し",
@@ -2073,6 +2065,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_a5bc8d1fb7d3b30f6d5459f400c95774.jpg",
        "file": "a5bc8d1fb7d3b30f6d5459f400c95774.jpg"
+      },
+      {
+       "name": "イカの青唐味噌",
+       "price": "429円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_4416fa246ef0c99bc4ce82140c5732c5.jpg",
+       "file": "4416fa246ef0c99bc4ce82140c5732c5.jpg"
       }
      ]
     },
@@ -2082,7 +2082,7 @@
       {
        "name": "旬の海鮮3種盛り",
        "price": "1,320円",
-       "desc": "旬の海鮮天ぷらお得な三点盛りです！\n仕入れ状況により内容が変更される場合があります。",
+       "desc": "旬の海鮮天ぷらお得な三点盛りです！\n秋鮭売り切れのため、金目鯛に変わってます。\n仕入れ状況により内容が変更される場合があります。",
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_8d19b96dbf733c5e556f72c09ff67859.jpg",
        "file": "8d19b96dbf733c5e556f72c09ff67859.jpg"
@@ -2104,12 +2104,20 @@
        "file": "0232396b9df02c69c0fa4880ae6ad0e9.jpg"
       },
       {
-       "name": "太刀魚　～香味野菜のせ～",
+       "name": "金目鯛",
        "price": "429円",
-       "desc": "脂ノリノリです！",
+       "desc": "レモン絞って岩塩でお召し上がり下さい",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_8c75e266424a09c2bdeb7eb00ac494fa.jpg",
-       "file": "8c75e266424a09c2bdeb7eb00ac494fa.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_3e99dc78e97c055c2ca3f7eefcd652b5.jpg",
+       "file": "3e99dc78e97c055c2ca3f7eefcd652b5.jpg"
+      },
+      {
+       "name": "秋刀魚梅大葉巻き",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_26ec2f5b81cb266c9de51c9f8e9075c0.jpg",
+       "file": "26ec2f5b81cb266c9de51c9f8e9075c0.jpg"
       }
      ]
     },
@@ -2248,22 +2256,6 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/135828/640x640_rect_135828399.jpg",
        "file": "65950bc7fb4467f7a296e33fecd0e138.jpg"
-      },
-      {
-       "name": "マグロほほ肉大葉巻き",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_9091659903832d04b5d51706616878d8.jpg",
-       "file": "9091659903832d04b5d51706616878d8.jpg"
-      },
-      {
-       "name": "鱧(はも)～梅大葉～",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_273cbf05fadaaa3ef61fc147a6c6cd93.jpg",
-       "file": "273cbf05fadaaa3ef61fc147a6c6cd93.jpg"
       }
      ]
     },
@@ -2324,28 +2316,12 @@
      "name": "〆の一品",
      "items": [
       {
-       "name": "茶そば",
-       "price": "869円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_d3c9914d3138295063947b8a5baf6292.jpg",
-       "file": "d3c9914d3138295063947b8a5baf6292.jpg"
-      },
-      {
        "name": "海老天手巻き",
        "price": "319円",
        "desc": "",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/135828/640x640_rect_135828743.jpg",
        "file": "4f2327dba85929797d327198df749f3c.jpg"
-      },
-      {
-       "name": "茶そばハーフ",
-       "price": "539円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_d8f279b95b8be484f78a29619ce53f0f.jpg",
-       "file": "d8f279b95b8be484f78a29619ce53f0f.jpg"
       },
       {
        "name": "玉天丼",
@@ -2364,12 +2340,12 @@
        "file": "2aaa0fb741134c2daf3daae009495a0d.jpg"
       },
       {
-       "name": "ミニ鮭いくら丼",
-       "price": "1,089円",
+       "name": "焼きおにぎり出汁茶漬け",
+       "price": "649円",
        "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_32a8bde6b5546e232e5228564a421532.jpg",
-       "file": "32a8bde6b5546e232e5228564a421532.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_22502fbd92f7c91c519af99b8514a767.jpg",
+       "file": "22502fbd92f7c91c519af99b8514a767.jpg"
       }
      ]
     },
@@ -2403,7 +2379,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "赤ワイン GLASS",
@@ -2566,6 +2542,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/75a86d818ea77feff73e3453b8b8c833.jpg",
        "file": "75a86d818ea77feff73e3453b8b8c833.jpg"
+      },
+      {
+       "name": "クレマン　トゥ　ダイ　フォア　カロット",
+       "price": "6,490円",
+       "desc": "国:フランス\n辛口\n品種: レレット・ブランシュ85％、アリゴテ10％、ドライマスカット5％\nハロウィン限定！\nリンゴや洋ナシなどを感じるアロマ。\nさっぱりとした軽やかな酸に、フルーティーで丸みのある風味、長い余韻が続きます。\n淡い金色の泡がエレガントな飲みやすい1本です。",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_54cf1766a39620ca03a5d8d23c901db0.jpg",
+       "file": "54cf1766a39620ca03a5d8d23c901db0.jpg"
       },
       {
        "name": "ゲヴェルツトラミネール ボトル",
@@ -2828,7 +2812,7 @@
  "menu-nakano.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "ランチタイム定食 定食",
@@ -2968,55 +2952,7 @@
      ]
     },
     {
-     "name": "果肉ごろごろシリーズ",
-     "items": [
-      {
-       "name": "果肉ごろごろソーダ(ノンアルコール)",
-       "price": "",
-       "desc": "※ノンアルコールドリンクです。\nこちらから種類をお選びください。",
-       "recommend": false,
-       "img": ""
-      },
-      {
-       "name": "果肉ごろごろサングリア",
-       "price": "",
-       "desc": "こちらから種類をお選びください。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_4e9b00aa362dbcaa8f1ef5994cf29596.jpg",
-       "file": "4e9b00aa362dbcaa8f1ef5994cf29596.jpg"
-      },
-      {
-       "name": "果肉ごろごろサワー",
-       "price": "",
-       "desc": "こちらから種類をお選びください。",
-       "recommend": false,
-       "img": ""
-      }
-     ]
-    },
-    {
-     "name": "本日のおススメ",
-     "items": [
-      {
-       "name": "生海老のピリ辛ユッケ",
-       "price": "869円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/381576/0d2e4a3a21ff29a03b81d31b357015db.jpg",
-       "file": "0d2e4a3a21ff29a03b81d31b357015db.jpg"
-      },
-      {
-       "name": "いちじくマスカルポーネ",
-       "price": "649円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/381576/8ebf0630c329a6a79c08db7518b05d61.jpg",
-       "file": "8ebf0630c329a6a79c08db7518b05d61.jpg"
-      }
-     ]
-    },
-    {
-     "name": "刺身・逸品・つまみ",
+     "name": "とりあえずの一品",
      "items": [
       {
        "name": "大根と白菜の浅漬け",
@@ -3059,19 +2995,12 @@
        "file": "a0249ad5b4485ae3dffbe01fffa6b2bb.jpg"
       },
       {
-       "name": "生カツオ薬味まみれ",
-       "price": "979円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/a3b5961a994faeb09a125c8f897fe3d5.jpg",
-       "file": "a3b5961a994faeb09a125c8f897fe3d5.jpg"
-      },
-      {
        "name": "塩辛クリームチーズ",
        "price": "429円",
        "desc": "",
        "recommend": false,
-       "img": ""
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/b4f482888bd6743cb40af6c97f000ad8.jpg",
+       "file": "b4f482888bd6743cb40af6c97f000ad8.jpg"
       },
       {
        "name": "鶏皮ポン酢",
@@ -3080,6 +3009,35 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/7f4d67f54e1c7f7441e1fec49d4842cc.jpg",
        "file": "7f4d67f54e1c7f7441e1fec49d4842cc.jpg"
+      }
+     ]
+    },
+    {
+     "name": "こだわりの一品",
+     "items": [
+      {
+       "name": "生海老のピリ辛ユッケ",
+       "price": "869円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/381576/0d2e4a3a21ff29a03b81d31b357015db.jpg",
+       "file": "0d2e4a3a21ff29a03b81d31b357015db.jpg"
+      },
+      {
+       "name": "生カツオ薬味まみれ",
+       "price": "979円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/a3b5961a994faeb09a125c8f897fe3d5.jpg",
+       "file": "a3b5961a994faeb09a125c8f897fe3d5.jpg"
+      },
+      {
+       "name": "いちじくマスカルポーネ",
+       "price": "649円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/381576/8ebf0630c329a6a79c08db7518b05d61.jpg",
+       "file": "8ebf0630c329a6a79c08db7518b05d61.jpg"
       },
       {
        "name": "鯛の和風カルパッチョ",
@@ -3090,183 +3048,17 @@
        "file": "d994509f8e9d906026b9a6f88e8303f1.jpg"
       },
       {
-       "name": "豚の角煮",
-       "price": "979円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/07b176ceed691dff80129456fd56fde2.jpg",
-       "file": "07b176ceed691dff80129456fd56fde2.jpg"
-      }
-     ]
-    },
-    {
-     "name": "焼き物",
-     "items": [
-      {
-       "name": "雪室熟成じゃがバター",
-       "price": "539円",
-       "desc": "プラス100円で塩辛トッピングできます！",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_fbe4eef7596a23524a0245a6e39aa282.jpg",
-       "file": "fbe4eef7596a23524a0245a6e39aa282.jpg"
-      },
-      {
-       "name": "塩辛トッピング",
-       "price": "100円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
-      },
-      {
-       "name": "和牛たたき~自家製玉ネギソース~",
+       "name": "焼き鮭～五種チーズと秋キノコのソース～",
        "price": "1,089円",
-       "desc": "",
+       "desc": "脂の乗った香ばしい銀鮭とキノコに、贅沢な5種のチーズソースを掛けました。\nブルーチーズのクセと風味がしっかり残る、お酒（ワインや日本酒）が進む大人の一品です。",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/8a269f692b7bb221f5591f136d23d1d0.jpg",
-       "file": "8a269f692b7bb221f5591f136d23d1d0.jpg"
-      },
-      {
-       "name": "カマンベールフォンデュ",
-       "price": "649円",
-       "desc": "ハチミツたっぷりかかった背徳感満載の逸品",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/88db845c833800f451f428ccef9df655.jpg",
-       "file": "88db845c833800f451f428ccef9df655.jpg"
-      },
-      {
-       "name": "特大ハラス",
-       "price": "979円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_d53bebf84b6f64ab64355594a5ff2b5e.jpg",
-       "file": "d53bebf84b6f64ab64355594a5ff2b5e.jpg"
-      },
-      {
-       "name": "茄子のたたき~薬味たっぷりしらすのせ~",
-       "price": "649円",
-       "desc": "旬の茄子をたたきで！しらすと薬味と自家製ポン酢でさっぱりと",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_176b70d57d1044045ada18950f9a99e6.jpg",
-       "file": "176b70d57d1044045ada18950f9a99e6.jpg"
-      },
-      {
-       "name": "焼きホタテハーブバター",
-       "price": "539円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_449a879b9edab34e3f9862593ac5e0c3.jpg",
-       "file": "449a879b9edab34e3f9862593ac5e0c3.jpg"
-      },
-      {
-       "name": "しまホッケ半身",
-       "price": "759円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
-      },
-      {
-       "name": "とろニシン焼き",
-       "price": "759円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
-      },
-      {
-       "name": "秋刀魚の塩焼き",
-       "price": "979円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_e0b085b5c0dcf1f1496a75ce085e64de.jpg",
-       "file": "e0b085b5c0dcf1f1496a75ce085e64de.jpg"
-      },
-      {
-       "name": "太刀魚~塩焼き~",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/a08832608cebc0af56481bfec30558b7.jpg",
-       "file": "a08832608cebc0af56481bfec30558b7.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_dce7a51c46a0595151786667fba1beda.jpg",
+       "file": "dce7a51c46a0595151786667fba1beda.jpg"
       }
      ]
     },
     {
-     "name": "串物",
-     "items": [
-      {
-       "name": "せせり　2本",
-       "price": "649円",
-       "desc": "鶏の首肉　強い弾力と濃厚な脂の旨味が特徴",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/e8f4e147fb6ab9858c774ba2855884a4.jpg",
-       "file": "e8f4e147fb6ab9858c774ba2855884a4.jpg"
-      },
-      {
-       "name": "焼きしいたけ　2本",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/debffb6c7ef6f100c07b646462543ad6.jpg",
-       "file": "debffb6c7ef6f100c07b646462543ad6.jpg"
-      },
-      {
-       "name": "海老焼き　2本",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/61f8acbaba42b40d68f9c03c09f91244.jpg",
-       "file": "61f8acbaba42b40d68f9c03c09f91244.jpg"
-      },
-      {
-       "name": "ねぎま〜タレ〜 2本",
-       "price": "539円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/327f8a3bebc48ff365cfb9e62c353620.jpg",
-       "file": "327f8a3bebc48ff365cfb9e62c353620.jpg"
-      },
-      {
-       "name": "ねぎま〜塩〜 2本",
-       "price": "539円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/cc0f268b39df00ce82b471f3f010e08c.jpg",
-       "file": "cc0f268b39df00ce82b471f3f010e08c.jpg"
-      },
-      {
-       "name": "ささみ　わさび　2本",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/3437186dce7cd328b88a106cce43a727.jpg",
-       "file": "3437186dce7cd328b88a106cce43a727.jpg"
-      },
-      {
-       "name": "ささみ　梅　2本",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/68305bfce3e6c37f0c3a197ee2738a2a.jpg",
-       "file": "68305bfce3e6c37f0c3a197ee2738a2a.jpg"
-      },
-      {
-       "name": "つくね　タレ　2本",
-       "price": "539円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/8302356359c89169b1b62cc2fb2e01c4.jpg",
-       "file": "8302356359c89169b1b62cc2fb2e01c4.jpg"
-      },
-      {
-       "name": "追加　卵黄",
-       "price": "100円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
-      }
-     ]
-    },
-    {
-     "name": "天ぷらコース",
+     "name": "天ぷら 盛り合わせ",
      "items": [
       {
        "name": "旬の天ぷら盛り合わせ",
@@ -3286,28 +3078,7 @@
      ]
     },
     {
-     "name": "旬天ぷら",
-     "items": [
-      {
-       "name": "秋刀魚〜鬼おろしポン酢〜",
-       "price": "429円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/abe46ac188029d4145fa2cb187388df4.jpg",
-       "file": "abe46ac188029d4145fa2cb187388df4.jpg"
-      },
-      {
-       "name": "舞茸",
-       "price": "319円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/c53b8537997bd6c10b3b97c659c100c0.jpg",
-       "file": "c53b8537997bd6c10b3b97c659c100c0.jpg"
-      }
-     ]
-    },
-    {
-     "name": "天ぷら海鮮",
+     "name": "天ぷら 海鮮",
      "items": [
       {
        "name": "いくらカナッペ",
@@ -3342,14 +3113,6 @@
        "file": "c660b5cf5b8698db31bc010d89b4aa3d.jpg"
       },
       {
-       "name": "キス ~トリュフ塩~",
-       "price": "319円",
-       "desc": "Sand borer ～truffle salt～",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/135824/640x640_rect_135824092.jpg",
-       "file": "dedf146fddf2edccae55618378055d89.jpg"
-      },
-      {
        "name": "海老　１ヶ",
        "price": "319円",
        "desc": "Shrimp",
@@ -3362,12 +3125,21 @@
        "price": "429円",
        "desc": "Conger eel",
        "recommend": false,
-       "img": ""
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/ad823eeefc650c0c0dbed822550b4646.jpg",
+       "file": "ad823eeefc650c0c0dbed822550b4646.jpg"
+      },
+      {
+       "name": "秋刀魚〜鬼おろしポン酢〜",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/abe46ac188029d4145fa2cb187388df4.jpg",
+       "file": "abe46ac188029d4145fa2cb187388df4.jpg"
       }
      ]
     },
     {
-     "name": "天ぷら野菜",
+     "name": "天ぷら 野菜",
      "items": [
       {
        "name": "蓮根",
@@ -3416,11 +3188,19 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_0f6d03e75d6f14b7813e949c2f59d193.jpg",
        "file": "0f6d03e75d6f14b7813e949c2f59d193.jpg"
+      },
+      {
+       "name": "舞茸",
+       "price": "319円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/c53b8537997bd6c10b3b97c659c100c0.jpg",
+       "file": "c53b8537997bd6c10b3b97c659c100c0.jpg"
       }
      ]
     },
     {
-     "name": "天ぷらその他",
+     "name": "天ぷら その他",
      "items": [
       {
        "name": "半熟卵天　１ヶ",
@@ -3457,7 +3237,150 @@
      ]
     },
     {
-     "name": "〆の一品",
+     "name": "焼き物 肉もの・焼き鳥",
+     "items": [
+      {
+       "name": "せせり　2本",
+       "price": "649円",
+       "desc": "鶏の首肉　強い弾力と濃厚な脂の旨味が特徴",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/e8f4e147fb6ab9858c774ba2855884a4.jpg",
+       "file": "e8f4e147fb6ab9858c774ba2855884a4.jpg"
+      },
+      {
+       "name": "和牛たたき~自家製玉ネギソース~",
+       "price": "1,089円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/8a269f692b7bb221f5591f136d23d1d0.jpg",
+       "file": "8a269f692b7bb221f5591f136d23d1d0.jpg"
+      },
+      {
+       "name": "ねぎま〜タレ〜 2本",
+       "price": "539円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/327f8a3bebc48ff365cfb9e62c353620.jpg",
+       "file": "327f8a3bebc48ff365cfb9e62c353620.jpg"
+      },
+      {
+       "name": "ねぎま〜塩〜 2本",
+       "price": "539円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/cc0f268b39df00ce82b471f3f010e08c.jpg",
+       "file": "cc0f268b39df00ce82b471f3f010e08c.jpg"
+      },
+      {
+       "name": "つくね　タレ　2本",
+       "price": "539円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/8302356359c89169b1b62cc2fb2e01c4.jpg",
+       "file": "8302356359c89169b1b62cc2fb2e01c4.jpg"
+      }
+     ]
+    },
+    {
+     "name": "焼き物 海鮮",
+     "items": [
+      {
+       "name": "特大ハラス",
+       "price": "979円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_d53bebf84b6f64ab64355594a5ff2b5e.jpg",
+       "file": "d53bebf84b6f64ab64355594a5ff2b5e.jpg"
+      },
+      {
+       "name": "焼きホタテハーブバター",
+       "price": "539円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_449a879b9edab34e3f9862593ac5e0c3.jpg",
+       "file": "449a879b9edab34e3f9862593ac5e0c3.jpg"
+      },
+      {
+       "name": "しまホッケ半身",
+       "price": "759円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_2f7549422ce9985dad95b5273323ef8d.jpg",
+       "file": "2f7549422ce9985dad95b5273323ef8d.jpg"
+      },
+      {
+       "name": "とろニシン焼き",
+       "price": "759円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_1d7e766b2b94b6a2666493355acce554.jpg",
+       "file": "1d7e766b2b94b6a2666493355acce554.jpg"
+      },
+      {
+       "name": "秋刀魚の塩焼き",
+       "price": "979円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_e0b085b5c0dcf1f1496a75ce085e64de.jpg",
+       "file": "e0b085b5c0dcf1f1496a75ce085e64de.jpg"
+      },
+      {
+       "name": "海老焼き　2本",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/61f8acbaba42b40d68f9c03c09f91244.jpg",
+       "file": "61f8acbaba42b40d68f9c03c09f91244.jpg"
+      },
+      {
+       "name": "太刀魚~塩焼き~",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/a08832608cebc0af56481bfec30558b7.jpg",
+       "file": "a08832608cebc0af56481bfec30558b7.jpg"
+      }
+     ]
+    },
+    {
+     "name": "焼き物 野菜・その他",
+     "items": [
+      {
+       "name": "雪室熟成じゃがバター",
+       "price": "539円",
+       "desc": "プラス100円で塩辛トッピングできます！",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_fbe4eef7596a23524a0245a6e39aa282.jpg",
+       "file": "fbe4eef7596a23524a0245a6e39aa282.jpg"
+      },
+      {
+       "name": "カマンベールフォンデュ",
+       "price": "649円",
+       "desc": "ハチミツたっぷりかかった背徳感満載の逸品",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/88db845c833800f451f428ccef9df655.jpg",
+       "file": "88db845c833800f451f428ccef9df655.jpg"
+      },
+      {
+       "name": "茄子のたたき~薬味たっぷりしらすのせ~",
+       "price": "649円",
+       "desc": "旬の茄子をたたきで！しらすと薬味と自家製ポン酢でさっぱりと",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_176b70d57d1044045ada18950f9a99e6.jpg",
+       "file": "176b70d57d1044045ada18950f9a99e6.jpg"
+      },
+      {
+       "name": "焼きしいたけ　2本",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/debffb6c7ef6f100c07b646462543ad6.jpg",
+       "file": "debffb6c7ef6f100c07b646462543ad6.jpg"
+      }
+     ]
+    },
+    {
+     "name": "〆の一品/ご飯物",
      "items": [
       {
        "name": "海老天手巻き",
@@ -3504,19 +3427,11 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
-     "name": "アルコール",
+     "name": "飲み物 ビール",
      "items": [
-      {
-       "name": "サングリア　白",
-       "price": "539円",
-       "desc": "Sangria White",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/640x640_rect_7081fde9b897c734b1a3bb15c29d1e9c.jpg",
-       "file": "7081fde9b897c734b1a3bb15c29d1e9c.jpg"
-      },
       {
        "name": "生ビール",
        "price": "649円",
@@ -3532,15 +3447,12 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/640x640_rect_569cae761fec4cc49781f00ea042f0f0.jpg",
        "file": "569cae761fec4cc49781f00ea042f0f0.jpg"
-      },
-      {
-       "name": "ハイボール",
-       "price": "539円",
-       "desc": "Whisky and Soda",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/100c2869f4638795da731a499bc980d6.jpg",
-       "file": "100c2869f4638795da731a499bc980d6.jpg"
-      },
+      }
+     ]
+    },
+    {
+     "name": "飲み物 焼酎",
+     "items": [
       {
        "name": "麦焼酎",
        "price": "539円",
@@ -3550,20 +3462,96 @@
        "file": "37e88901eb062c8fc63a9f31386531a0.jpg"
       },
       {
-       "name": "ジャスミン　ハイ",
-       "price": "539円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/640x640_rect_785751c449b97ec59fbf0e3379ec6842.jpg",
-       "file": "785751c449b97ec59fbf0e3379ec6842.jpg"
-      },
-      {
        "name": "芋焼酎",
        "price": "539円",
        "desc": "Shochu Sweet potato",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/c4a4d91ed459224616e4318e775b09c4.jpg",
        "file": "c4a4d91ed459224616e4318e775b09c4.jpg"
+      }
+     ]
+    },
+    {
+     "name": "飲み物 ウイスキー",
+     "items": [
+      {
+       "name": "ハイボール",
+       "price": "539円",
+       "desc": "Whisky and Soda",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/100c2869f4638795da731a499bc980d6.jpg",
+       "file": "100c2869f4638795da731a499bc980d6.jpg"
+      },
+      {
+       "name": "メガハイボール",
+       "price": "869円",
+       "desc": "",
+       "recommend": false,
+       "img": ""
+      }
+     ]
+    },
+    {
+     "name": "飲み物 サワー",
+     "items": [
+      {
+       "name": "つぶつぶみかんサワー",
+       "price": "539円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4a25565106c5808badf33c680b7c7e62.jpg",
+       "file": "4a25565106c5808badf33c680b7c7e62.jpg"
+      },
+      {
+       "name": "津軽りんごサワー",
+       "price": "539円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_426ce9f1ecd0e82d3736cc49748d8134.jpg",
+       "file": "426ce9f1ecd0e82d3736cc49748d8134.jpg"
+      },
+      {
+       "name": "レモンサワー",
+       "price": "539円",
+       "desc": "Lemon sour",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_be798d61d18823c2fd6aeb44e36ef693.jpg",
+       "file": "be798d61d18823c2fd6aeb44e36ef693.jpg"
+      },
+      {
+       "name": "メガサワー",
+       "price": "869円",
+       "desc": "",
+       "recommend": false,
+       "img": ""
+      },
+      {
+       "name": "カルピスサワー",
+       "price": "539円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_5d592c4caa98f08fd27970355578e79e.jpg",
+       "file": "5d592c4caa98f08fd27970355578e79e.jpg"
+      },
+      {
+       "name": "果肉ごろごろサワー",
+       "price": "",
+       "desc": "こちらから種類をお選びください。",
+       "recommend": false,
+       "img": ""
+      }
+     ]
+    },
+    {
+     "name": "飲み物 お茶ハイ",
+     "items": [
+      {
+       "name": "ジャスミン　ハイ",
+       "price": "539円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/640x640_rect_785751c449b97ec59fbf0e3379ec6842.jpg",
+       "file": "785751c449b97ec59fbf0e3379ec6842.jpg"
       },
       {
        "name": "緑茶ハイ（静岡一番緑茶）",
@@ -3591,31 +3579,76 @@
      ]
     },
     {
-     "name": "サワー",
+     "name": "飲み物 スパークリングワイン",
      "items": [
       {
-       "name": "つぶつぶみかんサワー",
-       "price": "539円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4a25565106c5808badf33c680b7c7e62.jpg",
-       "file": "4a25565106c5808badf33c680b7c7e62.jpg"
+       "name": "スパークリングワイン",
+       "price": "649円",
+       "desc": "Sparkling wine",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
+       "file": "ed908de70508628fff014099df36c80e.jpg"
       },
       {
-       "name": "津軽りんごサワー",
-       "price": "539円",
-       "desc": "",
+       "name": "スパークリングおかわり",
+       "price": "649円",
+       "desc": "２杯目以降同じグラスでなみなみ注ぎます",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_426ce9f1ecd0e82d3736cc49748d8134.jpg",
-       "file": "426ce9f1ecd0e82d3736cc49748d8134.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
+       "file": "ed908de70508628fff014099df36c80e.jpg"
       },
       {
-       "name": "レモンサワー",
-       "price": "539円",
-       "desc": "Lemon sour",
+       "name": "スパークリング ボトル",
+       "price": "4,290円",
+       "desc": "Sparkling wine Bottle\n乾杯にオススメ◎ 辛口/フランス",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_be798d61d18823c2fd6aeb44e36ef693.jpg",
-       "file": "be798d61d18823c2fd6aeb44e36ef693.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
+       "file": "ed908de70508628fff014099df36c80e.jpg"
+      }
+     ]
+    },
+    {
+     "name": "飲み物 白ワイン",
+     "items": [
+      {
+       "name": "シャルドネ　グラス",
+       "price": "649円",
+       "desc": "Chardonnay / Glass",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_b9cf35a9bed13467b8364f4261729004.jpg",
+       "file": "b9cf35a9bed13467b8364f4261729004.jpg"
+      },
+      {
+       "name": "シャルドネ　ボトル",
+       "price": "4,290円",
+       "desc": "Chardonnay / Bottle",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_b9cf35a9bed13467b8364f4261729004.jpg",
+       "file": "b9cf35a9bed13467b8364f4261729004.jpg"
+      },
+      {
+       "name": "フリッツァンテ　グラス",
+       "price": "649円",
+       "desc": "きめ細やかな泡が心地よく、爽やかな果実味が広がる微発泡ワインです。食前酒としてはもちろん、お料理にも合わせやすい一杯です。",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_eedec24029e93c7c75ff0592a0293383.jpg",
+       "file": "eedec24029e93c7c75ff0592a0293383.jpg"
+      },
+      {
+       "name": "甲州　グラス",
+       "price": "759円",
+       "desc": "2025年新酒 甲州 すだちやカボスなどの和柑橘を思わせる爽やかな香り",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_7be381024154b58ad49200b74a057285.jpg",
+       "file": "7be381024154b58ad49200b74a057285.jpg"
+      },
+      {
+       "name": "甲州ボトル",
+       "price": "5,390円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_7be381024154b58ad49200b74a057285.jpg",
+       "file": "7be381024154b58ad49200b74a057285.jpg"
       },
       {
        "name": "フリッツァンテ　ボトル",
@@ -3626,37 +3659,176 @@
        "file": "07533306dba6aa0e16b31b05d3327ef5.jpg"
       },
       {
-       "name": "カルピスサワー",
-       "price": "539円",
+       "name": "ソーヴィニヨンヴィオニエ　 グラス",
+       "price": "649円",
+       "desc": "Viognier / Glass",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/13b483560cfebefde5a292c3b2a51523.jpg",
+       "file": "13b483560cfebefde5a292c3b2a51523.jpg"
+      },
+      {
+       "name": "リースリング　グラス",
+       "price": "649円",
        "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_5d592c4caa98f08fd27970355578e79e.jpg",
-       "file": "5d592c4caa98f08fd27970355578e79e.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/71762355aed2d3e99e076a7f125a0519.jpg",
+       "file": "71762355aed2d3e99e076a7f125a0519.jpg"
+      },
+      {
+       "name": "ソーヴィニヨンヴィオニエ ボトル",
+       "price": "4,290円",
+       "desc": "Viognier / Bottle",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/13b483560cfebefde5a292c3b2a51523.jpg",
+       "file": "13b483560cfebefde5a292c3b2a51523.jpg"
+      },
+      {
+       "name": "シュナンブランボトル",
+       "price": "4,290円",
+       "desc": "chenin blanc/ Bottle",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4f6ea0d6db63ec0049aa1dc84322b040.jpg",
+       "file": "4f6ea0d6db63ec0049aa1dc84322b040.jpg"
+      },
+      {
+       "name": "リースリング ボトル",
+       "price": "4,290円",
+       "desc": "半甘口・低アルコール　リースリング　ドイツ　林檎や洋梨などの豊かな果実香",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4e02c930c4588cfdf425544d262bb589.jpg",
+       "file": "4e02c930c4588cfdf425544d262bb589.jpg"
+      },
+      {
+       "name": "シュナンブラン",
+       "price": "649円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_4f6ea0d6db63ec0049aa1dc84322b040.jpg",
+       "file": "4f6ea0d6db63ec0049aa1dc84322b040.jpg"
       }
      ]
     },
     {
-     "name": "メガドリンク",
+     "name": "飲み物 赤ワイン",
      "items": [
       {
-       "name": "メガサワー",
+       "name": "ピノノワール　グラス",
+       "price": "759円",
+       "desc": "Pinot Noir / Glass",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_c215e8d212ab73794c3f4f21d8e2f60c.jpg",
+       "file": "c215e8d212ab73794c3f4f21d8e2f60c.jpg"
+      },
+      {
+       "name": "ピノノワール　ボトル",
+       "price": "4,290円",
+       "desc": "Pinot Noir / Bottle",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_c215e8d212ab73794c3f4f21d8e2f60c.jpg",
+       "file": "c215e8d212ab73794c3f4f21d8e2f60c.jpg"
+      },
+      {
+       "name": "カベルネソーヴィニヨン　グラス",
+       "price": "649円",
+       "desc": "Cabernet Sauvignon / Glass",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/56a97428395c380346f7232466e992c1.jpg",
+       "file": "56a97428395c380346f7232466e992c1.jpg"
+      },
+      {
+       "name": "カベルネソーヴィニヨン　ボトル",
+       "price": "4,290円",
+       "desc": "Cabernet Sauvignon / Bottle",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/56a97428395c380346f7232466e992c1.jpg",
+       "file": "56a97428395c380346f7232466e992c1.jpg"
+      }
+     ]
+    },
+    {
+     "name": "飲み物 サングリア",
+     "items": [
+      {
+       "name": "サングリア　白",
+       "price": "539円",
+       "desc": "Sangria White",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380536/640x640_rect_7081fde9b897c734b1a3bb15c29d1e9c.jpg",
+       "file": "7081fde9b897c734b1a3bb15c29d1e9c.jpg"
+      },
+      {
+       "name": "果肉ごろごろサングリア",
+       "price": "",
+       "desc": "こちらから種類をお選びください。",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_4e9b00aa362dbcaa8f1ef5994cf29596.jpg",
+       "file": "4e9b00aa362dbcaa8f1ef5994cf29596.jpg"
+      }
+     ]
+    },
+    {
+     "name": "飲み物 日本酒",
+     "items": [
+      {
+       "name": "昴(京都)300ml",
+       "price": "1,089円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_851385a946a53857df63e007186b2bae.jpg",
+       "file": "851385a946a53857df63e007186b2bae.jpg"
+      },
+      {
+       "name": "讃岐くらうでぃ",
+       "price": "",
+       "desc": "都道府県：香川県\n度数：6%\n甘辛：超甘口\n味わい：カルピスのように甘酸っぱくクリーミー。肉料理、揚げ物と相性抜群の低アルコール濁り酒。",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_9d11737371f63855c34a365f7651e189.jpg",
+       "file": "9d11737371f63855c34a365f7651e189.jpg"
+      },
+      {
+       "name": "黒松白鹿180ml",
        "price": "869円",
        "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_01a39cbb04867718b81b2ede495f8f48.jpg",
+       "file": "01a39cbb04867718b81b2ede495f8f48.jpg"
+      },
+      {
+       "name": "八海山　純米吟醸",
+       "price": "",
+       "desc": "都道府県：新潟県\n度数：15.5%\n甘辛：淡麗辛口\n味わい：ほのかな香りとすっきりした切れ味。どんな料理にも合わせやすい王道の食中酒。",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_53646e4519fc9f439f4ec2b7013a5581.jpg",
+       "file": "53646e4519fc9f439f4ec2b7013a5581.jpg"
+      },
+      {
+       "name": "リスの収穫祭　純米",
+       "price": "",
+       "desc": "都道府県：青森県\n度数：15%\n甘辛：やや辛口（熟成旨口）\n味わい：秋限定のひやおろし。まろやかな口当たりと深みのある旨味で、秋の味覚にぴったり。",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_d7834f5d1ac1fc1d418f01aaac737d81.jpg",
+       "file": "d7834f5d1ac1fc1d418f01aaac737d81.jpg"
+      },
+      {
+       "name": "浦霞　本醸造",
+       "price": "",
+       "desc": "都道府県：宮城県\n度数：15〜16%\n甘辛：辛口\n味わい：米の旨味と凛とした切れ味が両立。冷やでもぬる燗でも楽しめる本格辛口酒。",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_bbe911051bc417d5a8e6dd09401cc45a.jpg",
+       "file": "bbe911051bc417d5a8e6dd09401cc45a.jpg"
+      }
+     ]
+    },
+    {
+     "name": "飲み物 ノンアルコール",
+     "items": [
+      {
+       "name": "果肉ごろごろソーダ(ノンアルコール)",
+       "price": "",
+       "desc": "※ノンアルコールドリンクです。\nこちらから種類をお選びください。",
        "recommend": false,
        "img": ""
       },
-      {
-       "name": "メガハイボール",
-       "price": "869円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
-      }
-     ]
-    },
-    {
-     "name": "ソフトドリンク",
-     "items": [
       {
        "name": "緑茶(静岡一番茶)",
        "price": "319円",
@@ -3680,14 +3852,6 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_5b05840f60acbb9ddaa4f865f7c943e7.jpg",
        "file": "5b05840f60acbb9ddaa4f865f7c943e7.jpg"
-      },
-      {
-       "name": "炭酸水",
-       "price": "319円",
-       "desc": "Sparkling water",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_eba258517e4de2d208d0c7a23968dcb1.jpg",
-       "file": "eba258517e4de2d208d0c7a23968dcb1.jpg"
       },
       {
        "name": "ジャスミン茶",
@@ -3719,228 +3883,6 @@
        "desc": "",
        "recommend": false,
        "img": ""
-      }
-     ]
-    },
-    {
-     "name": "スパークリング",
-     "items": [
-      {
-       "name": "スパークリングワイン",
-       "price": "649円",
-       "desc": "Sparkling wine",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
-       "file": "ed908de70508628fff014099df36c80e.jpg"
-      },
-      {
-       "name": "スパークリングおかわり",
-       "price": "649円",
-       "desc": "２杯目以降同じグラスでなみなみ注ぎます",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
-       "file": "ed908de70508628fff014099df36c80e.jpg"
-      },
-      {
-       "name": "スパークリング ボトル",
-       "price": "4,290円",
-       "desc": "Sparkling wine Bottle\n乾杯にオススメ◎ 辛口/フランス",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_ed908de70508628fff014099df36c80e.jpg",
-       "file": "ed908de70508628fff014099df36c80e.jpg"
-      }
-     ]
-    },
-    {
-     "name": "白ワイン グラス",
-     "items": [
-      {
-       "name": "シャルドネ　グラス",
-       "price": "649円",
-       "desc": "Chardonnay / Glass",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_b9cf35a9bed13467b8364f4261729004.jpg",
-       "file": "b9cf35a9bed13467b8364f4261729004.jpg"
-      },
-      {
-       "name": "フリッツァンテ　グラス",
-       "price": "649円",
-       "desc": "きめ細やかな泡が心地よく、爽やかな果実味が広がる微発泡ワインです。食前酒としてはもちろん、お料理にも合わせやすい一杯です。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_eedec24029e93c7c75ff0592a0293383.jpg",
-       "file": "eedec24029e93c7c75ff0592a0293383.jpg"
-      },
-      {
-       "name": "甲州　グラス",
-       "price": "759円",
-       "desc": "2025年新酒 甲州 すだちやカボスなどの和柑橘を思わせる爽やかな香り",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_7be381024154b58ad49200b74a057285.jpg",
-       "file": "7be381024154b58ad49200b74a057285.jpg"
-      },
-      {
-       "name": "リースリング　グラス",
-       "price": "649円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/71762355aed2d3e99e076a7f125a0519.jpg",
-       "file": "71762355aed2d3e99e076a7f125a0519.jpg"
-      }
-     ]
-    },
-    {
-     "name": "白ワイン ボトル",
-     "items": [
-      {
-       "name": "シャルドネ　ボトル",
-       "price": "4,290円",
-       "desc": "Chardonnay / Bottle",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_b9cf35a9bed13467b8364f4261729004.jpg",
-       "file": "b9cf35a9bed13467b8364f4261729004.jpg"
-      },
-      {
-       "name": "グリューナーヴェルトリーナー",
-       "price": "5,390円",
-       "desc": "爽やかなハーブ、日胡椒の香り。ミネラリーな辛口は天ぷらと相性抜群!!",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_332d7ae84830de2fd713725fe73da214.jpg",
-       "file": "332d7ae84830de2fd713725fe73da214.jpg"
-      },
-      {
-       "name": "甲州ボトル",
-       "price": "5,390円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_7be381024154b58ad49200b74a057285.jpg",
-       "file": "7be381024154b58ad49200b74a057285.jpg"
-      },
-      {
-       "name": "ソーヴィニヨンヴィオニエ ボトル",
-       "price": "4,290円",
-       "desc": "Viognier / Bottle",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/13b483560cfebefde5a292c3b2a51523.jpg",
-       "file": "13b483560cfebefde5a292c3b2a51523.jpg"
-      },
-      {
-       "name": "シュナンブランボトル",
-       "price": "4,290円",
-       "desc": "chenin blanc/ Bottle",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4f6ea0d6db63ec0049aa1dc84322b040.jpg",
-       "file": "4f6ea0d6db63ec0049aa1dc84322b040.jpg"
-      },
-      {
-       "name": "リースリング ボトル",
-       "price": "4,290円",
-       "desc": "半甘口・低アルコール　リースリング　ドイツ　林檎や洋梨などの豊かな果実香",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_4e02c930c4588cfdf425544d262bb589.jpg",
-       "file": "4e02c930c4588cfdf425544d262bb589.jpg"
-      },
-      {
-       "name": "フリッツァンテ　ボトル",
-       "price": "4,290円",
-       "desc": "きめ細やかな泡が心地よく、爽やかな果実味が広がる微発泡ワインです。食前酒としてはもちろん、お料理にも合わせやすい一杯です。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_eedec24029e93c7c75ff0592a0293383.jpg",
-       "file": "eedec24029e93c7c75ff0592a0293383.jpg"
-      }
-     ]
-    },
-    {
-     "name": "赤ワイン グラス",
-     "items": [
-      {
-       "name": "ピノノワール　グラス",
-       "price": "759円",
-       "desc": "Pinot Noir / Glass",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_c215e8d212ab73794c3f4f21d8e2f60c.jpg",
-       "file": "c215e8d212ab73794c3f4f21d8e2f60c.jpg"
-      },
-      {
-       "name": "カベルネソーヴィニヨン　グラス",
-       "price": "649円",
-       "desc": "Cabernet Sauvignon / Glass",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/56a97428395c380346f7232466e992c1.jpg",
-       "file": "56a97428395c380346f7232466e992c1.jpg"
-      }
-     ]
-    },
-    {
-     "name": "赤ワイン ボトル",
-     "items": [
-      {
-       "name": "ピノノワール　ボトル",
-       "price": "4,290円",
-       "desc": "Pinot Noir / Bottle",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_c215e8d212ab73794c3f4f21d8e2f60c.jpg",
-       "file": "c215e8d212ab73794c3f4f21d8e2f60c.jpg"
-      },
-      {
-       "name": "カベルネソーヴィニヨン　ボトル",
-       "price": "4,290円",
-       "desc": "Cabernet Sauvignon / Bottle",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/56a97428395c380346f7232466e992c1.jpg",
-       "file": "56a97428395c380346f7232466e992c1.jpg"
-      }
-     ]
-    },
-    {
-     "name": "日本酒",
-     "items": [
-      {
-       "name": "昴(京都)300ml",
-       "price": "1,089円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_851385a946a53857df63e007186b2bae.jpg",
-       "file": "851385a946a53857df63e007186b2bae.jpg"
-      },
-      {
-       "name": "讃岐くらうでぃ　半合",
-       "price": "649円",
-       "desc": "都道府県：香川県\n度数：6%\n甘辛：超甘口\n味わい：カルピスのように甘酸っぱくクリーミー。肉料理、揚げ物と相性抜群の低アルコール濁り酒。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_9d11737371f63855c34a365f7651e189.jpg",
-       "file": "9d11737371f63855c34a365f7651e189.jpg"
-      },
-      {
-       "name": "黒松白鹿180ml",
-       "price": "869円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_01a39cbb04867718b81b2ede495f8f48.jpg",
-       "file": "01a39cbb04867718b81b2ede495f8f48.jpg"
-      },
-      {
-       "name": "八海山　純米吟醸半合",
-       "price": "649円",
-       "desc": "都道府県：新潟県\n度数：15.5%\n甘辛：淡麗辛口\n味わい：ほのかな香りとすっきりした切れ味。どんな料理にも合わせやすい王道の食中酒。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_53646e4519fc9f439f4ec2b7013a5581.jpg",
-       "file": "53646e4519fc9f439f4ec2b7013a5581.jpg"
-      },
-      {
-       "name": "リスの収穫祭　純米　半合",
-       "price": "649円",
-       "desc": "都道府県：青森県\n度数：15%\n甘辛：やや辛口（熟成旨口）\n味わい：秋限定のひやおろし。まろやかな口当たりと深みのある旨味で、秋の味覚にぴったり。",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_d7834f5d1ac1fc1d418f01aaac737d81.jpg",
-       "file": "d7834f5d1ac1fc1d418f01aaac737d81.jpg"
-      },
-      {
-       "name": "浦霞　本醸造　半合",
-       "price": "649円",
-       "desc": "都道府県：宮城県\n度数：15〜16%\n甘辛：辛口\n味わい：米の旨味と凛とした切れ味が両立。冷やでもぬる燗でも楽しめる本格辛口酒。",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_bbe911051bc417d5a8e6dd09401cc45a.jpg",
-       "file": "bbe911051bc417d5a8e6dd09401cc45a.jpg"
       },
       {
        "name": "※ボトル限定ワインメニューもございます。お気軽にスタッフへお声がけください。",
@@ -3957,7 +3899,7 @@
  "menu-tenma.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -3973,10 +3915,18 @@
       {
        "name": "マスカット＆巨峰の紅茶テリーヌ",
        "price": "539円",
-       "desc": "旬のマスカットと巨峰をちりばめた、透き通るゼリーのテリーヌです。冷たいうちにどうぞ！巨峰のドリンクとともにどうぞ！",
+       "desc": "旬のマスカットと巨峰をちりばめた、透き通るゼリーのテリーヌです。巨峰のドリンクとともにどうぞ！",
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_11c047a98359ebf304aea7f84e4e3ced.jpg",
        "file": "11c047a98359ebf304aea7f84e4e3ced.jpg"
+      },
+      {
+       "name": "鱈~からすみがけ~",
+       "price": "319円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/136d3addfe18a368e76f33cc2c7462a8.jpg",
+       "file": "136d3addfe18a368e76f33cc2c7462a8.jpg"
       },
       {
        "name": "秋刀魚の炙り刺し",
@@ -4042,10 +3992,10 @@
       {
        "name": "マスカットとチーズ生ハム巻き",
        "price": "429円",
-       "desc": "マスカットの甘みと生ハムの塩気、チーズのコクがひとつに。スパークリングと好相性！",
+       "desc": "マスカットの甘みとチーズのコクを、生ハムの塩気で包み込んだ逸品！スパークリングと好相性！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380390/640x640_rect_fe0553b3c7add542be5655c0e2bb8274.jpg",
-       "file": "fe0553b3c7add542be5655c0e2bb8274.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_db4f5e75c2d6573d7c5465c0425cd544.jpg",
+       "file": "db4f5e75c2d6573d7c5465c0425cd544.jpg"
       },
       {
        "name": "鯛昆布締め造り",
@@ -4058,10 +4008,10 @@
       {
        "name": "お造り三種盛り",
        "price": "1,089円",
-       "desc": "三種の鮮魚を楽しめる贅沢な盛り合わせ。[白]甲州と好相性！",
+       "desc": "市場から仕入れた鮮魚三種を楽しめる贅沢な盛り合わせ。\n日本の[白]甲州がおすすめ！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/371057/46df0b4b39a9154477fe0d522cc4c4ae.jpg",
-       "file": "46df0b4b39a9154477fe0d522cc4c4ae.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_8dff142e0615c42c6d4b2d02c22d1002.jpg",
+       "file": "8dff142e0615c42c6d4b2d02c22d1002.jpg"
       },
       {
        "name": "前菜小鉢盛り",
@@ -4121,8 +4071,8 @@
        "price": "319円",
        "desc": "大塩の看板娘！ぷちっと弾けるいくらの濃い旨みと海苔天の食感を楽しめます。スパークリングと相性◎",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/175851/640x640_rect_0a47ccdef54da67305b8bb568d5ec541.jpg",
-       "file": "0a47ccdef54da67305b8bb568d5ec541.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_565a7fd9a4e5309728d1d046186ced61.jpg",
+       "file": "565a7fd9a4e5309728d1d046186ced61.jpg"
       },
       {
        "name": "とろたく　１ヶ",
@@ -4155,14 +4105,6 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_9b69a2a9c556b54d4d7900ecf50f2bcf.jpg",
        "file": "9b69a2a9c556b54d4d7900ecf50f2bcf.jpg"
-      },
-      {
-       "name": "鱧(ハモ)～梅肉ソース添え～　１ケ",
-       "price": "319円",
-       "desc": "ふっくら揚げた鱧に、鉄板の梅肉ソースを添えました。そのままでどうぞ！[白]ヴィオニエと好相性！",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380390/640x640_rect_2cd57ed4898cb4e33c1bdfbcefaf242c.jpg",
-       "file": "2cd57ed4898cb4e33c1bdfbcefaf242c.jpg"
       },
       {
        "name": "鯛～レモンピール",
@@ -4343,7 +4285,7 @@
        "name": "玉天丼",
        "price": "319円",
        "desc": "半熟卵天をご飯にのせた〆の丼ぶり。甘だれが染みたご飯に黄身をくずして召し上がれ！",
-       "recommend": false,
+       "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/208852/640x640_rect_7d23a246fe0d5002a5f57c66b10a132e.jpg",
        "file": "7d23a246fe0d5002a5f57c66b10a132e.jpg"
       },
@@ -4375,7 +4317,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "お飲み物",
@@ -4789,7 +4731,7 @@
  "menu-umeda.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "旬もの",
@@ -4881,8 +4823,8 @@
        "price": "429円",
        "desc": "マスカットの甘みと生ハムの塩気、チーズのコクがひとつに。スパークリングと好相性！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_fe0553b3c7add542be5655c0e2bb8274.jpg",
-       "file": "fe0553b3c7add542be5655c0e2bb8274.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_db4f5e75c2d6573d7c5465c0425cd544.jpg",
+       "file": "db4f5e75c2d6573d7c5465c0425cd544.jpg"
       },
       {
        "name": "酒盗クリームチーズ",
@@ -5200,7 +5142,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "お飲み物 ビール・ハイボール",
@@ -5625,19 +5567,11 @@
  "menu-dai3.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "旬もの（Seasonal foods）",
      "items": [
-      {
-       "name": "鱧(はも)~梅肉ソース~",
-       "price": "429円",
-       "desc": "ふっくら揚げた鱧に、鉄板の梅肉ソースを添えました。そのままでどうぞ！[白]ヴィオニエと好相性！",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/130922/640x640_rect_130922153.jpg",
-       "file": "443e38308fe9ab2f68d4371835120462.jpg"
-      },
       {
        "name": "秋刀魚~梅しそ巻~",
        "price": "429円",
@@ -5712,8 +5646,8 @@
        "price": "429円",
        "desc": "マスカットの甘みと生ハムの塩気、チーズのコクがひとつに。スパークリングと好相性！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380390/e01619219aac1623f1e755442f0b78ce.jpg",
-       "file": "e01619219aac1623f1e755442f0b78ce.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_db4f5e75c2d6573d7c5465c0425cd544.jpg",
+       "file": "db4f5e75c2d6573d7c5465c0425cd544.jpg"
       },
       {
        "name": "冷凍いちじく生ハムモッツァレラ",
@@ -5783,6 +5717,14 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_9b69a2a9c556b54d4d7900ecf50f2bcf.jpg",
        "file": "9b69a2a9c556b54d4d7900ecf50f2bcf.jpg"
+      },
+      {
+       "name": "鱈(たら)~からすみがけ~",
+       "price": "319円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_e2acc852ff12ec7d020dea843759fcbe.jpg",
+       "file": "e2acc852ff12ec7d020dea843759fcbe.jpg"
       },
       {
        "name": "穴子　ハーフ",
@@ -5992,7 +5934,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "ドリンク ビール、ハイボール、サワー（Beer, Whisky, Sour）",
@@ -6054,15 +5996,15 @@
        "name": "スパークリング",
        "price": "539円",
        "desc": "きりっとした辛口で、天ぷらの香ばしさを軽やかに引き立てる泡です（スペイン）。\n◎おすすめペアリング: いくらカナッペ、天ぷら全般",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380390/640x640_rect_8a4a5f165c77b83ae4caf8869f86435f.jpg",
-       "file": "8a4a5f165c77b83ae4caf8869f86435f.jpg"
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_41eb217643b28de5477cbed2c42043bb.jpg",
+       "file": "41eb217643b28de5477cbed2c42043bb.jpg"
       },
       {
        "name": "ロゼスパークリング",
        "price": "539円",
        "desc": "塩にも天つゆにも寄り添い、海老や真鯛の味わいを引き立てる万能なロゼです（スペイン）。\n◎おすすめペアリング: 海老、真鯛～レモンピール～",
-       "recommend": false,
+       "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380713/640x640_rect_38da744d194aa7dd8e56aa6d9c9fbdc2.jpg",
        "file": "38da744d194aa7dd8e56aa6d9c9fbdc2.jpg"
       },
@@ -6070,15 +6012,15 @@
        "name": "ボトル　スパークリング",
        "price": "4,290円",
        "desc": "きりっとした辛口で、天ぷらの香ばしさを軽やかに引き立てる泡です（スペイン）。\n◎おすすめペアリング: いくらカナッペ、天ぷら全般",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380390/640x640_rect_8a4a5f165c77b83ae4caf8869f86435f.jpg",
-       "file": "8a4a5f165c77b83ae4caf8869f86435f.jpg"
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_f9c9a5962679c4e0cd08f5600a74b5b0.jpg",
+       "file": "f9c9a5962679c4e0cd08f5600a74b5b0.jpg"
       },
       {
        "name": "ボトル　ロゼスパークリング",
        "price": "4,290円",
        "desc": "塩にも天つゆにも寄り添い、海老や真鯛の味わいを引き立てる万能なロゼです（スペイン）。\n◎おすすめペアリング: 海老、真鯛～レモンピール～",
-       "recommend": false,
+       "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380713/640x640_rect_c5490f7bef7120634d62a24a722013e0.jpg",
        "file": "c5490f7bef7120634d62a24a722013e0.jpg"
       },
@@ -6374,7 +6316,7 @@
  "menu-ten5.html": [
   {
    "kind": "料理",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -6384,8 +6326,8 @@
        "price": "1,089円",
        "desc": "三種の鮮魚を楽しめる贅沢な盛り合わせ。[白]甲州と好相性！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_d594f9c9cb725af25d1aae6035ced34f.jpg",
-       "file": "d594f9c9cb725af25d1aae6035ced34f.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_8dff142e0615c42c6d4b2d02c22d1002.jpg",
+       "file": "8dff142e0615c42c6d4b2d02c22d1002.jpg"
       },
       {
        "name": "秋刀魚の炙り刺し",
@@ -6394,14 +6336,6 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_cd8b2e555e4af669f903659bd23e1516.jpg",
        "file": "cd8b2e555e4af669f903659bd23e1516.jpg"
-      },
-      {
-       "name": "秋刀魚のフレッシュマリネ",
-       "price": "539円",
-       "desc": "旬の秋刀魚にトマトと玉ねぎを合わせた爽やかなマリネ。[白]ソーヴィニヨン・ブランと好相性！",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_e84d17d1c4cad835dd83e088617873bd.jpg",
-       "file": "e84d17d1c4cad835dd83e088617873bd.jpg"
       },
       {
        "name": "冷凍いちじく生ハムモッツァレラ",
@@ -6418,6 +6352,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_bfd7c91e5aa9db2c8da271b1f0bf5c9b.jpg",
        "file": "bfd7c91e5aa9db2c8da271b1f0bf5c9b.jpg"
+      },
+      {
+       "name": "鱈~カラスミがけ~",
+       "price": "319円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_d1d1290b58a37db3c96ae807251b0e67.jpg",
+       "file": "d1d1290b58a37db3c96ae807251b0e67.jpg"
       },
       {
        "name": "いちじくゴルゴンゾーラ",
@@ -6477,8 +6419,8 @@
        "price": "429円",
        "desc": "マスカットの甘みと生ハムの塩気、チーズのコクがひとつに。スパークリングと好相性！",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_fe0553b3c7add542be5655c0e2bb8274.jpg",
-       "file": "fe0553b3c7add542be5655c0e2bb8274.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385422/640x640_rect_db4f5e75c2d6573d7c5465c0425cd544.jpg",
+       "file": "db4f5e75c2d6573d7c5465c0425cd544.jpg"
       },
       {
        "name": "ローストビーフ",
@@ -6728,7 +6670,7 @@
        "name": "バニラアイス",
        "price": "429円",
        "desc": "バニラの甘い香りと、ひんやりなめらかな口当たりを楽しむアイスです。お食事の締めに、やさしい甘さをどうぞ。",
-       "recommend": true,
+       "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/640x640_rect_d446a01b4232a5160372fb3b06d0200a.jpg",
        "file": "d446a01b4232a5160372fb3b06d0200a.jpg"
       }
@@ -6738,7 +6680,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/09/28",
+   "updated": "2026/10/05",
    "categories": [
     {
      "name": "ドリンク ビール・ハイボール・サワー・旬の果実サワー",
