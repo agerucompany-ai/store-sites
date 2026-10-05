@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 source ~/.github_env
 T=${GITHUB_TOKEN:-$GH_TOKEN}
 ./build.sh
-typeset -A REPO=(washoku washoku-oshio-site naniwa takoyakinaniwa-site tempura tempura-oshio-site tanba tambanosho-site)
+typeset -A REPO=(washoku washoku-oshio-site naniwa takoyakinaniwa-site tempura tempura-oshio-site tanba tambanosho-net)
 targets=(${@:-all}); [[ $targets == all ]] && targets=(washoku naniwa tempura tanba)
 for s in $targets; do
   cd dist/$s
