@@ -16,7 +16,7 @@ SITES = {  # 本番ドメイン : プレビューURL
     "https://washoku-oshio.com/": "https://agerucompany-ai.github.io/washoku-oshio-site/",
     "https://takoyakinaniwa.com/": "https://agerucompany-ai.github.io/takoyakinaniwa-site/",
     "https://tempura-oshio.com/": "https://agerucompany-ai.github.io/tempura-oshio-site/",
-    "https://tambanosho.net/": "https://agerucompany-ai.github.io/tambanosho-site/",
+    "https://tambanosho.net/": "https://tambanosho.net/",
 }
 FILES = [
     *sorted((HOME / "ageruinc-site/src").glob("*.html")),
