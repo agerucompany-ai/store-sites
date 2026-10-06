@@ -553,3 +553,5 @@ section{padding:96px 16px}
 .tanba .group-card .g-link{margin-top:auto;padding-top:12px;font-size:14px;color:var(--main);font-weight:600}
 .tanba .group-card.main{border:3px solid var(--accent)}
 @media (max-width:800px){.tanba .group-grid{grid-template-columns:1fr}}
+.tanba img[src*="kuri-y-"]{object-position:center 25%}
+.tanba img[src*="kuri-y-smile"]{object-position:center 42%}
