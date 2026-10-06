@@ -32,17 +32,16 @@ STORES = {
     "tempura": {
         "name": "天ぷらとワイン 大塩",
         "color": "#1c1c1c",
-        "nav": [("index.html#concept", "旬をアゲル"), ("index.html#menu", "看板メニュー"), ("index.html#shops", "店舗一覧"),
-                ("index.html#sdgs", "SDGs")],
+        "nav": [("index.html", "トップ"), ("index.html#season", "旬に勝る素材なし"), ("index.html#shops", "店舗一覧")],
         "shops": [
+            ("hibiya", "日比谷店", "https://tabelog.com/tokyo/A1301/A130103/13250016/", "https://www.hotpepper.jp/strJ003807221/yoyaku/hpds/"),
             ("yurakucho", "有楽町店", "https://tabelog.com/tokyo/A1301/A130102/13294269/", "https://www.hotpepper.jp/strJ003829013/yoyaku/hpds/"),
             ("marunouchi", "丸の内店", "https://tabelog.com/tokyo/A1302/A130201/13258449/", "https://yoyaku.toreta.in/tempura-oshio-marunouchi"),
-            ("hibiya", "日比谷店", "https://tabelog.com/tokyo/A1301/A130103/13250016/", "https://www.hotpepper.jp/strJ003807221/yoyaku/hpds/"),
             ("nakano", "中野店", "https://tabelog.com/tokyo/A1319/A131902/13250017/", "https://yoyaku.toreta.in/tempura-oshio-nakano"),
             ("tenma", "天満市場店", "https://tabelog.com/osaka/A2701/A270103/27112353/", "https://yoyaku.tempuraoshio.com/tenma"),
-            ("umeda", "梅田店", "https://tabelog.com/osaka/A2701/A270101/27108066/", "https://yoyaku.tempuraoshio.com/umeda"),
-            ("dai3", "大阪駅前第三ビル店", "https://tabelog.com/osaka/A2701/A270101/27103689/", "https://yoyaku.tempuraoshio.com/dai3"),
             ("ten5", "天五横丁店", "https://tabelog.com/osaka/A2701/A270103/27100720/", "https://yoyaku.tempuraoshio.com/ten5"),
+            ("dai3", "大阪駅前第三ビル店", "https://tabelog.com/osaka/A2701/A270101/27103689/", "https://yoyaku.tempuraoshio.com/dai3"),
+            ("umeda", "梅田店", "https://tabelog.com/osaka/A2701/A270101/27108066/", "https://yoyaku.tempuraoshio.com/umeda"),
         ],
     },
 }
@@ -291,10 +290,14 @@ def main():
             p.unlink()
     (d / "menu.json").write_text(json.dumps(dump if "shops" in cfg else dump["menu.html"], ensure_ascii=False, indent=1))
     print(f"{store}: 写真{len(used)}枚")
+    extra = []
+    if store == "tempura":  # 店舗ページの「○○店の旬」は menu.json から作るので同期のたびに作り直す
+        subprocess.run([sys.executable, str(ROOT / "tools/tempura_shops.py")], check=True)
+        extra = [f"{store}/shops.json", *[f"{store}/shop-{j[4]}.html" for j in jobs]]
 
     if "--deploy" in sys.argv:
         g = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True)
-        g("add", "-A", f"{store}/index.html", f"{store}/hero-img", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs])
+        g("add", "-A", f"{store}/index.html", f"{store}/hero-img", f"{store}/menu.json", f"{store}/menu-img", *[f"{store}/{j[0]}" for j in jobs], *extra)
         if not g("diff", "--cached", "--quiet").returncode:
             print("変更なし。公開しません。")
             return
