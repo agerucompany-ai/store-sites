@@ -539,3 +539,17 @@ section{padding:96px 16px}
 .tanba .ig-wall img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px}
 .tanba .sign-s{text-align:right;font-size:14px;opacity:.9}
 @media (max-width:800px){.tanba .ig-wall{grid-template-columns:repeat(2,1fr)}}
+.tanba .group-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:960px;margin:0 auto}
+.tanba .group-card{background:#fff;color:var(--ink);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column}
+.tanba .group-card .g-logo{height:110px;display:flex;align-items:center;justify-content:center;background:#f6f3ea;border-radius:10px;margin-bottom:14px;overflow:hidden}
+.tanba .group-card .g-logo img{max-height:84px;width:auto}
+.tanba .group-card .g-logo img.photo{max-height:none;width:100%;height:100%;object-fit:cover}
+.tanba .group-card .g-logo.light img{max-height:34px}
+.tanba .group-card h3{font-size:19px;font-weight:600;color:var(--main)}
+.tanba .group-card .g-biz{font-size:13.5px;color:var(--muted);margin:4px 0 12px;line-height:1.7}
+.tanba .group-card dl{display:grid;grid-template-columns:6.5em 1fr;gap:6px 10px;font-size:14px;line-height:1.7}
+.tanba .group-card dt{color:var(--accent);font-weight:600;font-family:var(--sans);font-size:12.5px}
+.tanba .group-card dd a{color:var(--main)}
+.tanba .group-card .g-link{margin-top:auto;padding-top:12px;font-size:14px;color:var(--main);font-weight:600}
+.tanba .group-card.main{border:3px solid var(--accent)}
+@media (max-width:800px){.tanba .group-grid{grid-template-columns:1fr}}
