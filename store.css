@@ -606,3 +606,4 @@ section{padding:96px 16px}
 .tanba .kuri-grow p{grid-column:1/-1;text-align:center;font-size:14px;opacity:.9}
 @media (max-width:800px){.tanba .kuri-grow{grid-template-columns:1fr 1fr}.tanba .kuri-grow img:first-child{grid-column:1/-1}}
 .tanba .team-list p:not(.has-pic){padding-left:86px}
+.tanba .photo-row{margin-top:56px}
