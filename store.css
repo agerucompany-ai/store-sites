@@ -599,3 +599,10 @@ section{padding:96px 16px}
 .tanba .kuri-movie h3{font-size:22px;font-weight:600;letter-spacing:.06em;margin:4px 0 12px;color:var(--main)}
 .tanba .kuri-movie p{font-size:15px;line-height:2}
 @media (max-width:800px){.tanba .kuri-movie{grid-template-columns:1fr;gap:20px}.tanba .kuri-movie video{max-width:320px;margin:0 auto}}
+.tanba .team-list .has-pic{display:flex;align-items:center;gap:14px}
+.tanba .team-list .has-pic img{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none}
+.tanba .kuri-grow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.tanba .kuri-grow img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.tanba .kuri-grow p{grid-column:1/-1;text-align:center;font-size:14px;opacity:.9}
+@media (max-width:800px){.tanba .kuri-grow{grid-template-columns:1fr 1fr}.tanba .kuri-grow img:first-child{grid-column:1/-1}}
+.tanba .team-list p:not(.has-pic){padding-left:86px}
