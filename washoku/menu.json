@@ -1,7 +1,7 @@
 [
  {
   "kind": "料理",
-  "updated": "2026/09/28",
+  "updated": "2026/10/05",
   "categories": [
    {
     "name": "旬・本日のおすすめ",
@@ -353,7 +353,7 @@
  },
  {
   "kind": "ドリンク",
-  "updated": "2026/09/28",
+  "updated": "2026/10/05",
   "categories": [
    {
     "name": "お飲み物",
@@ -624,14 +624,6 @@
    {
     "name": "日本酒",
     "items": [
-     {
-      "name": "桃川　佳撰銀松にごり酒",
-      "price": "429円",
-      "desc": "",
-      "recommend": false,
-      "img": "https://tblg.k-img.com/restaurant/images/Rvw/380388/4da8d07d72dddae431f4c427dcd8d19e.jpg",
-      "file": "4da8d07d72dddae431f4c427dcd8d19e.jpg"
-     },
      {
       "name": "日本酒　地酒",
       "price": "",

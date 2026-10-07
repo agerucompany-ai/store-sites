@@ -615,3 +615,37 @@ section{padding:96px 16px}
 .people-grid figcaption span{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.15em;color:var(--accent)}
 .people-grid figcaption b{display:block;font-weight:500;font-size:20px;letter-spacing:.2em;margin-top:2px}
 @media (max-width:800px){.people-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ---------- 言語切替・外国語版（tools/i18n.py が生成） ---------- */
+.lang-switch{display:flex;align-items:center;gap:2px;margin-left:20px;order:3;font-family:var(--sans);flex:none}
+.site-header nav{order:2;margin-left:auto}
+html:not([lang="ja"]) .site-header nav a{white-space:nowrap}
+.lang-switch a{color:#fff;text-decoration:none;font-size:12px;line-height:1;padding:5px 6px;border-radius:4px;opacity:.75;text-shadow:0 1px 6px rgba(0,0,0,.35);white-space:nowrap}
+.lang-switch a:hover{opacity:1}
+.lang-switch a.on{opacity:1;background:rgba(255,255,255,.18)}
+.btn small.ja-page{display:block;font-size:11px;opacity:.8;letter-spacing:0;font-family:var(--sans)}
+html:not([lang="ja"]) .site-header nav{gap:22px}
+html:not([lang="ja"]) .site-header nav a{font-size:14px;letter-spacing:.03em}
+html:not([lang="ja"]) .menu-head h1{letter-spacing:.12em}
+html[lang="zh-Hans"]{--serif:"Noto Serif SC","Songti SC","SimSun",serif;--sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
+html[lang="zh-Hant"]{--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif}
+html[lang="ko"]{--serif:"Noto Serif KR","AppleMyungjo","Batang",serif;--sans:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
+html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhere}
+@media (max-width:1180px){html:not([lang="ja"]) .site-header nav{gap:16px}html:not([lang="ja"]) .site-header nav a{font-size:13px}}
+.site-header:has(.lang-switch) nav a{white-space:nowrap}
+@media (max-width:1240px){html[lang="ja"] .site-header:has(.lang-switch) nav{gap:20px}html[lang="ja"] .site-header:has(.lang-switch) nav a{letter-spacing:.05em}}
+/* 言語切替が入ったヘッダーは、ナビが1行に収まらない幅からハンバーガーにする */
+@media (min-width:801px) and (max-width:1060px){
+  .site-header:has(.lang-switch) .menu-btn{display:block;order:3}
+  .site-header:has(.lang-switch) .lang-switch{margin-left:auto;margin-right:12px;order:2}
+  .site-header:has(.lang-switch) nav{position:fixed;inset:64px 0 auto 0;background:var(--main);flex-direction:column;gap:0;padding:8px 0 16px;display:none;margin-left:0}
+  .site-header:has(.lang-switch) nav.open{display:flex}
+  .site-header:has(.lang-switch) nav a{padding:14px 24px;font-size:16px}
+  .site-header:has(.lang-switch){background:var(--main)}
+}
+@media (max-width:800px){
+  .lang-switch{margin-left:auto;margin-right:10px;order:2}
+  .site-header .menu-btn{order:3}
+  .lang-switch a{padding:5px 4px;font-size:12px}
+  html:not([lang="ja"]) .site-header nav a{font-size:16px}
+}

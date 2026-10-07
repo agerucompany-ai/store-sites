@@ -16,7 +16,7 @@
   var root=document.getElementById('slider');if(!root)return;
   var slides=[].slice.call(root.querySelectorAll('.slide')),n=slides.length,cur=0,timer=null;
   var dots=root.querySelector('.dots');
-  slides.forEach(function(_,i){var b=document.createElement('button');b.setAttribute('aria-label',(i+1)+'枚目');b.onclick=function(){go(i);restart()};dots.appendChild(b)});
+  slides.forEach(function(_,i){var b=document.createElement('button');b.setAttribute('aria-label',(/^ja/.test(document.documentElement.lang)?(i+1)+'枚目':'Slide '+(i+1)));b.onclick=function(){go(i);restart()};dots.appendChild(b)});
   function layout(){
     var w=slides[0].offsetWidth,gap=parseFloat(getComputedStyle(root).getPropertyValue('--gap'))||24;
     slides.forEach(function(s,i){

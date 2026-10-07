@@ -294,6 +294,12 @@ def main():
     if store == "tempura":  # 店舗ページの「○○店の旬」は menu.json から作るので同期のたびに作り直す
         subprocess.run([sys.executable, str(ROOT / "tools/tempura_shops.py")], check=True)
         extra = [f"{store}/shops.json", *[f"{store}/shop-{j[4]}.html" for j in jobs]]
+    # 外国語版（英・简・繁・韓）：未訳の品だけ OpenAI で訳す。失敗しても同期は止めない
+    try:
+        subprocess.run([sys.executable, str(ROOT / "tools/i18n.py"), store], timeout=1800)
+    except Exception as e:
+        print("外国語版の生成に失敗:", e)
+    extra += [f"{store}/{lang}" for lang in ("en", "zh-hans", "zh-hant", "ko")] + ["tools/i18n"]
 
     if "--deploy" in sys.argv:
         g = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True)
