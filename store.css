@@ -607,3 +607,11 @@ section{padding:96px 16px}
 @media (max-width:800px){.tanba .kuri-grow{grid-template-columns:1fr 1fr}.tanba .kuri-grow img:first-child{grid-column:1/-1}}
 .tanba .team-list p:not(.has-pic){padding-left:86px}
 .tanba .photo-row{margin-top:56px}
+/* 天ぷら：情熱を持った料理人たち */
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.people-grid figure{margin:0}
+.people-grid img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+.people-grid figcaption{margin-top:14px;text-align:center}
+.people-grid figcaption span{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.15em;color:var(--accent)}
+.people-grid figcaption b{display:block;font-weight:500;font-size:20px;letter-spacing:.2em;margin-top:2px}
+@media (max-width:800px){.people-grid{grid-template-columns:1fr;gap:32px}}
