@@ -116,7 +116,7 @@ Style: warm, natural, concise restaurant copy for travellers. Use "we/our" (firs
 Keep numbers, prices, times, dates, phone numbers, URLs and symbols exactly as written (convert 円 prices to ¥ form, e.g. 1,280円 -> ¥1,280).
 Keep line breaks: if the source has N "\\n", the translation must have the same N "\\n" at the matching places.
 Days of week: translate compactly (en: Mon, Tue ... / Mon–Thu; 祝 = public holidays; 祝前日 = day before a holiday).
-Person names: en = given name + family name in romaji (北村 光穂 -> Mitsuho Kitamura); zh = keep kanji; ko = Hangul reading.
+Person names: en = given name + family name in romaji (北村 光穂 -> Mitsuo Kitamura); zh = keep kanji; ko = Hangul reading.
 Do not promote unlimited drinking in copy: avoid words like "all-you-can-drink"/"free-flow" except when it is literally a menu item name.
 kind=dish means a menu item name. {DISH_RULE[lang]}
 kind=addr means a Japanese address: translate it into the local address format, keeping all numbers.
