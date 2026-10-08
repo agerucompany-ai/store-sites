@@ -650,3 +650,15 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
   .lang-switch a{padding:5px 4px;font-size:12px}
   html:not([lang="ja"]) .site-header nav a{font-size:16px}
 }
+
+.tanba .ushi-table-wrap{margin:36px auto 0;max-width:760px;overflow-x:auto}
+.tanba .ushi-table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:14px;color:#fff;white-space:nowrap}
+.tanba .ushi-table th,.tanba .ushi-table td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.2);text-align:right}
+.tanba .ushi-table thead th{font-weight:500;font-size:12px;color:rgba(255,255,255,.75)}
+.tanba .ushi-table th:first-child{text-align:left}
+.tanba .ushi-table tbody th{font-weight:500}
+.tanba .ushi-table th small{font-size:11px;color:rgba(255,255,255,.7)}
+.tanba .ushi-table td.up{color:var(--accent)}
+.tanba .ushi-table td.down{color:rgba(255,255,255,.7)}
+.tanba #record .catch{margin-top:28px;text-align:center}
+@media (max-width:640px){.tanba .ushi-table{font-size:12.5px}.tanba .ushi-table th,.tanba .ushi-table td{padding:8px 6px}}
