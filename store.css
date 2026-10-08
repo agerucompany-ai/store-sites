@@ -662,3 +662,9 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
 .tanba .ushi-table td.down{color:rgba(255,255,255,.7)}
 .tanba #record .catch{margin-top:28px;text-align:center}
 @media (max-width:640px){.tanba .ushi-table{font-size:12.5px}.tanba .ushi-table th,.tanba .ushi-table td{padding:8px 6px}}
+
+.tanba .ushi-points{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:36px auto 0;padding:0}
+.tanba .ushi-points li{border-top:2px solid var(--accent);padding:16px 4px 0}
+.tanba .ushi-points b{display:block;font-size:24px;font-weight:600;color:var(--accent);margin-bottom:8px}
+.tanba .ushi-points span{display:block;font-family:var(--sans);font-size:14px;line-height:1.9;color:rgba(255,255,255,.9)}
+@media (max-width:760px){.tanba .ushi-points{grid-template-columns:1fr;gap:20px}}
