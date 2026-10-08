@@ -668,3 +668,6 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
 .tanba .ushi-points b{display:block;font-size:24px;font-weight:600;color:var(--accent);margin-bottom:8px}
 .tanba .ushi-points span{display:block;font-family:var(--sans);font-size:14px;line-height:1.9;color:rgba(255,255,255,.9)}
 @media (max-width:760px){.tanba .ushi-points{grid-template-columns:1fr;gap:20px}}
+.tanba .ig-gallery.two{grid-template-columns:1fr 1fr;grid-auto-rows:320px}
+@media (max-width:800px){.tanba .ig-gallery.two{grid-auto-rows:180px}}
+.tanba .photo-row.one{grid-template-columns:minmax(0,640px);justify-content:center}
