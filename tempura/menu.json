@@ -2,7 +2,7 @@
  "menu-hibiya.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -124,12 +124,12 @@
        "img": ""
       },
       {
-       "name": "生インドマグロ中トロ刺し",
-       "price": "1,529円",
+       "name": "サワラ炙り刺し",
+       "price": "1,089円",
        "desc": "",
        "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_2dcd166ea88ff92f4e878caa439dd0d5.jpg",
-       "file": "2dcd166ea88ff92f4e878caa439dd0d5.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386693/640x640_rect_cefc17d625eb0ffbf67e3414dc5c2b68.jpg",
+       "file": "cefc17d625eb0ffbf67e3414dc5c2b68.jpg"
       },
       {
        "name": "ちょこっと厚焼き玉子",
@@ -146,14 +146,6 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_a5bc8d1fb7d3b30f6d5459f400c95774.jpg",
        "file": "a5bc8d1fb7d3b30f6d5459f400c95774.jpg"
-      },
-      {
-       "name": "イカの青唐味噌",
-       "price": "429円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_4416fa246ef0c99bc4ce82140c5732c5.jpg",
-       "file": "4416fa246ef0c99bc4ce82140c5732c5.jpg"
       }
      ]
     },
@@ -205,14 +197,6 @@
     {
      "name": "天ぷら野菜",
      "items": [
-      {
-       "name": "万願寺とうがらし",
-       "price": "319円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_f9a7f64826fa6b30dcde1f58197ecf9e.jpg",
-       "file": "f9a7f64826fa6b30dcde1f58197ecf9e.jpg"
-      },
       {
        "name": "玉ねぎ１P",
        "price": "209円",
@@ -427,18 +411,6 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/385456/640x640_rect_22502fbd92f7c91c519af99b8514a767.jpg",
        "file": "22502fbd92f7c91c519af99b8514a767.jpg"
-      }
-     ]
-    },
-    {
-     "name": "甘味",
-     "items": [
-      {
-       "name": "濃厚黒胡麻アイス",
-       "price": "429円",
-       "desc": "",
-       "recommend": false,
-       "img": ""
       },
       {
        "name": "毎日市場で仕入れた新鮮な食材を日替わりでご提供。 メニューは店舗にてご確認ください！",
@@ -460,7 +432,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "赤ワイン GLASS",
@@ -857,14 +829,6 @@
      "name": "クラフトビール",
      "items": [
       {
-       "name": "名古屋赤味噌ラガー",
-       "price": "1,000円",
-       "desc": "その名の通り、愛知特産の「赤味噌（豆味噌）を使用。\n麦芽と味噌の織りなす深いコクと飲み口を持つ濃色ラガー。「え！？ビールに味噌？」と侮る事なかれ、数々の賞を受賞する際物ではない完成度の高いビールです",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/ffdeec3093f965742d061ed843b44a4c.jpg",
-       "file": "ffdeec3093f965742d061ed843b44a4c.jpg"
-      },
-      {
        "name": "TOKYO BLUES",
        "price": "1,000円",
        "desc": "広がる豊かな柑橘系の香りと余韻に残るシャープな苦味、モルト由来のほのかな甘味が印象的。",
@@ -893,7 +857,7 @@
  "menu-yurakucho.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "一品",
@@ -939,14 +903,6 @@
        "file": "9dc1ef12cd45365a1210bcadbfdc3fba.jpg"
       },
       {
-       "name": "カツオ",
-       "price": "979円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_5a3ed9cb02475c03a18723bed9da23db.jpg",
-       "file": "5a3ed9cb02475c03a18723bed9da23db.jpg"
-      },
-      {
        "name": "蛸とらっきょうの酢の物",
        "price": "539円",
        "desc": "",
@@ -955,12 +911,20 @@
        "file": "0b7d36928d856781a1fdc7d308587949.jpg"
       },
       {
-       "name": "貝三種オイル漬け",
-       "price": "759円",
+       "name": "胡麻ダレ真鯛",
+       "price": "979円",
        "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_6fbd13338f3d18ed0e7ab87bdbde5166.jpg",
-       "file": "6fbd13338f3d18ed0e7ab87bdbde5166.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_5b67bacb568a7e5b4b1dcc842c14f085.jpg",
+       "file": "5b67bacb568a7e5b4b1dcc842c14f085.jpg"
+      },
+      {
+       "name": "天然 ブリ塩たたき",
+       "price": "979円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_c1395b68c4a07389b191800a516afae9.jpg",
+       "file": "c1395b68c4a07389b191800a516afae9.jpg"
       },
       {
        "name": "牛すじだし巻き玉子",
@@ -991,12 +955,12 @@
      "name": "天ぷら旬",
      "items": [
       {
-       "name": "鮭",
+       "name": "サーモンタルタル",
        "price": "429円",
        "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_a4089d469f403f4ac175a7e882475457.jpg",
-       "file": "a4089d469f403f4ac175a7e882475457.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_eb023838fd64251775a5659f34437465.jpg",
+       "file": "eb023838fd64251775a5659f34437465.jpg"
       },
       {
        "name": "梅紫蘇サンマ",
@@ -1016,10 +980,11 @@
       },
       {
        "name": "じゃがいも　自家製ホワイトソース",
-       "price": "539円",
+       "price": "759円",
        "desc": "",
        "recommend": false,
-       "img": ""
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_aafb59e35b31880f22918b5e70cebc20.jpg",
+       "file": "aafb59e35b31880f22918b5e70cebc20.jpg"
       },
       {
        "name": "舞茸",
@@ -1044,7 +1009,7 @@
      "items": [
       {
        "name": "いくらカナッペ",
-       "price": "319円",
+       "price": "539円",
        "desc": "",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/236836/640x640_rect_f2c4b192d375212ee97a7573cb4cb513.jpg",
@@ -1238,7 +1203,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "スパークリングワイン",
@@ -1942,7 +1907,7 @@
  "menu-marunouchi.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -1993,28 +1958,20 @@
        "file": "aafb59e35b31880f22918b5e70cebc20.jpg"
       },
       {
+       "name": "胡麻ダレ真鯛",
+       "price": "979円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_5b67bacb568a7e5b4b1dcc842c14f085.jpg",
+       "file": "5b67bacb568a7e5b4b1dcc842c14f085.jpg"
+      },
+      {
        "name": "ポテトサラダ",
        "price": "429円",
        "desc": "mashed potato salad",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/a38961c623efc57c11ca7eddb177f6cf.jpg",
        "file": "a38961c623efc57c11ca7eddb177f6cf.jpg"
-      },
-      {
-       "name": "貝三種オイル漬け",
-       "price": "759円",
-       "desc": "牡蠣、ムール貝、あずまにしきの三種オイル漬け",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_8bd3fc6d1842190cde5032ed41e8b745.jpg",
-       "file": "8bd3fc6d1842190cde5032ed41e8b745.jpg"
-      },
-      {
-       "name": "カツオ塩たたき",
-       "price": "979円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/640x640_rect_1e6b4189d70fae8fd44c24280bcc68b4.jpg",
-       "file": "1e6b4189d70fae8fd44c24280bcc68b4.jpg"
       },
       {
        "name": "つぶ貝のワサビ漬け",
@@ -2042,7 +1999,7 @@
       {
        "name": "ちょこっとおばんざい",
        "price": "759円",
-       "desc": "まずはこちらで胃の調子を整えて、初夏の暑さにピッタリ冷んやりおばんざい",
+       "desc": "",
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_7d44d040ff13ae339ba559d1331874a4.jpg",
        "file": "7d44d040ff13ae339ba559d1331874a4.jpg"
@@ -2054,6 +2011,14 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/b6366eff7a6af27bf4637b8dd8ee0356.jpg",
        "file": "b6366eff7a6af27bf4637b8dd8ee0356.jpg"
+      },
+      {
+       "name": "天然 ブリ炙り刺し",
+       "price": "979円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_c1395b68c4a07389b191800a516afae9.jpg",
+       "file": "c1395b68c4a07389b191800a516afae9.jpg"
       }
      ]
     },
@@ -2061,20 +2026,12 @@
      "name": "厳選天ぷら",
      "items": [
       {
-       "name": "いちじくゴルゴンゾーラ１ヶ",
+       "name": "サーモンタルタル",
        "price": "429円",
        "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/385457/640x640_rect_6eac888ec6cdc613506e3c34ee509bd5.jpg",
-       "file": "6eac888ec6cdc613506e3c34ee509bd5.jpg"
-      },
-      {
-       "name": "万願寺とうがらし　1本",
-       "price": "319円",
-       "desc": "",
        "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/384130/c52fc47b07175633021bf5f5627d99c4.jpg",
-       "file": "c52fc47b07175633021bf5f5627d99c4.jpg"
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_eb023838fd64251775a5659f34437465.jpg",
+       "file": "eb023838fd64251775a5659f34437465.jpg"
       },
       {
        "name": "蓮根１ヶ",
@@ -2325,7 +2282,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "お飲み物",
@@ -2812,7 +2769,7 @@
  "menu-nakano.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "ランチタイム定食 定食",
@@ -2879,6 +2836,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_f2498f0c19ef8abde201c6384c20200e.jpg",
        "file": "f2498f0c19ef8abde201c6384c20200e.jpg"
+      },
+      {
+       "name": "塩サバ一夜干し定食(半熟卵付き)",
+       "price": "1,090円",
+       "desc": "限定10食",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/a9b6b9f1eac637562128206370edea1a.jpg",
+       "file": "a9b6b9f1eac637562128206370edea1a.jpg"
       }
      ]
     },
@@ -3067,13 +3032,6 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380394/640x640_rect_f3553489e078eb09f807897f36ffe317.jpg",
        "file": "f3553489e078eb09f807897f36ffe317.jpg"
-      },
-      {
-       "name": "センベロセット",
-       "price": "1,100円",
-       "desc": "日〜木曜日ディナータイム限定\n祝前日を除く\n・ドリンク1杯\n・小鉢1品\n・天ぷら3品\n仕入れ状況によって内容が変わります。",
-       "recommend": false,
-       "img": ""
       }
      ]
     },
@@ -3427,7 +3385,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "飲み物 ビール",
@@ -3899,7 +3857,7 @@
  "menu-tenma.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -4317,7 +4275,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "お飲み物",
@@ -4731,7 +4689,7 @@
  "menu-ten5.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -5095,7 +5053,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "ドリンク ビール・ハイボール・サワー・旬の果実サワー",
@@ -5501,7 +5459,7 @@
  "menu-dai3.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "旬もの（Seasonal foods）",
@@ -5868,7 +5826,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "ドリンク ビール、ハイボール、サワー（Beer, Whisky, Sour）",
@@ -6250,7 +6208,7 @@
  "menu-umeda.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "旬もの",
@@ -6473,6 +6431,14 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380391/4dd1c9478c06020bb9d0e428199fe877.jpg",
        "file": "4dd1c9478c06020bb9d0e428199fe877.jpg"
+      },
+      {
+       "name": "鱈～タルタルソース～",
+       "price": "319円",
+       "desc": "ふわっとした鱈の天ぷらには、濃厚タルタルがベストマッチ。タルタルソースをたっぷりつけてどうぞ！爽やかなハーブ香る[白]ソーヴィニヨン・ブランと相性◎！",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386693/640x640_rect_8ac589e9648b3897434247c955bc2964.jpg",
+       "file": "8ac589e9648b3897434247c955bc2964.jpg"
       }
      ]
     },
@@ -6661,7 +6627,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/05",
+   "updated": "2026/10/12",
    "categories": [
     {
      "name": "お飲み物 ビール・ハイボール",
