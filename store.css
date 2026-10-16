@@ -598,6 +598,8 @@ section{padding:96px 16px}
 .tanba .kuri-movie .no{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--accent)}
 .tanba .kuri-movie h3{font-size:22px;font-weight:600;letter-spacing:.06em;margin:4px 0 12px;color:var(--main)}
 .tanba .kuri-movie p{font-size:15px;line-height:2}
+.tanba .kuri-aerial{max-width:1080px;margin:0 auto}
+.tanba .kuri-aerial video{width:100%;aspect-ratio:16/9;border-radius:8px;background:#000;display:block;object-fit:cover}
 .tanba .kuri-movie.solo{grid-template-columns:minmax(0,360px);justify-content:center}
 @media (max-width:800px){.tanba .kuri-movie{grid-template-columns:1fr;gap:20px}.tanba .kuri-movie video{max-width:320px;margin:0 auto}}
 .tanba .team-list .has-pic{display:flex;align-items:center;gap:14px}
