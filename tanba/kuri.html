@@ -36,9 +36,14 @@
 <!-- ===== 栗園 ===== -->
 <section class="dark" id="orchard">
   <div class="wrap">
-    <h2 class="sec-title fade">栗園</h2>
+    <h2 class="sec-title fade">栗原の栗園</h2>
     <div class="kuri-aerial fade">
-      <video src="video/kuri-en2.mp4" poster="img/kuri-en.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <video id="kuri-en" src="video/kuri-en2.mp4" poster="img/kuri-en.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <div class="kuri-cap">
+        <p data-to="3"><b>丹波市最大級の栗園</b>2.3ha　サッカーコート3面分の広さです。</p>
+        <p data-to="12">2014年に豪雨で土砂崩れがおき、山が崩れました。<br>流れた土をもう一度戻し、水はけの良さを活かし、約600本の栗を植えました。<br>落ち葉やイガがもう一度土に栄養をもたらし、山は復活。</p>
+        <p data-to="999">栗原の栗園は地域の皆様の協力と、循環型農業で成り立っています。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -204,5 +209,10 @@
   <small>© 株式会社丹波農商</small>
 </footer>
 <script src="store.js"></script>
+<script>
+(function(){var v=document.getElementById("kuri-en");if(!v)return;var ps=v.parentNode.querySelectorAll(".kuri-cap p");
+function up(){var t=v.currentTime,hit=false;ps.forEach(function(p){var on=!hit&&t<+p.dataset.to;if(on)hit=true;p.classList.toggle("on",on)})}
+v.addEventListener("timeupdate",up);v.addEventListener("loadeddata",up);up()})();
+</script>
 </body>
 </html>

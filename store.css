@@ -598,7 +598,11 @@ section{padding:96px 16px}
 .tanba .kuri-movie .no{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--accent)}
 .tanba .kuri-movie h3{font-size:22px;font-weight:600;letter-spacing:.06em;margin:4px 0 12px;color:var(--main)}
 .tanba .kuri-movie p{font-size:15px;line-height:2}
-.tanba .kuri-aerial{max-width:1080px;margin:0 auto}
+.tanba .kuri-aerial{max-width:1080px;margin:0 auto;position:relative}
+.tanba .kuri-cap p{position:absolute;left:0;right:0;bottom:0;margin:0;padding:72px 48px 32px;border-radius:0 0 8px 8px;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-size:17px;line-height:2;letter-spacing:.06em;text-shadow:0 1px 6px rgba(0,0,0,.5);opacity:0;transition:opacity .8s;pointer-events:none}
+.tanba .kuri-cap p.on{opacity:1}
+.tanba .kuri-cap b{display:block;font-size:30px;font-weight:600;letter-spacing:.12em;margin-bottom:4px}
+@media (max-width:700px){.tanba .kuri-cap{position:relative;min-height:13em}.tanba .kuri-cap p{top:0;bottom:auto;padding:18px 0 0;background:none;text-shadow:none;font-size:15px;line-height:1.9}.tanba .kuri-cap b{font-size:21px}}
 .tanba .kuri-aerial video{width:100%;aspect-ratio:16/9;border-radius:8px;background:#000;display:block;object-fit:cover}
 .tanba .kuri-movie.solo{grid-template-columns:minmax(0,360px);justify-content:center}
 @media (max-width:800px){.tanba .kuri-movie{grid-template-columns:1fr;gap:20px}.tanba .kuri-movie video{max-width:320px;margin:0 auto}}
