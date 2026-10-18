@@ -2,7 +2,7 @@
  "menu-hibiya.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -122,14 +122,6 @@
        "desc": "",
        "recommend": false,
        "img": ""
-      },
-      {
-       "name": "サワラ炙り刺し",
-       "price": "1,089円",
-       "desc": "",
-       "recommend": true,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386693/640x640_rect_cefc17d625eb0ffbf67e3414dc5c2b68.jpg",
-       "file": "cefc17d625eb0ffbf67e3414dc5c2b68.jpg"
       },
       {
        "name": "ちょこっと厚焼き玉子",
@@ -432,7 +424,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "赤ワイン GLASS",
@@ -829,6 +821,14 @@
      "name": "クラフトビール",
      "items": [
       {
+       "name": "常陸野ネストビール",
+       "price": "1,000円",
+       "desc": "常陸野ネストビールの「ホップフェスト（HOP FEST）」は、秋田県横手市などで収穫されたばかりのフレッシュホップ（生ホップ）をふんだんに使用して造られる、秋季限定の特別なエールビールです。",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/387990/640x640_rect_71561848bd402384ebb0dbb53dfb3687.jpg",
+       "file": "71561848bd402384ebb0dbb53dfb3687.jpg"
+      },
+      {
        "name": "TOKYO BLUES",
        "price": "1,000円",
        "desc": "広がる豊かな柑橘系の香りと余韻に残るシャープな苦味、モルト由来のほのかな甘味が印象的。",
@@ -857,7 +857,7 @@
  "menu-yurakucho.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "一品",
@@ -901,6 +901,14 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/267876/640x640_rect_9dc1ef12cd45365a1210bcadbfdc3fba.jpg",
        "file": "9dc1ef12cd45365a1210bcadbfdc3fba.jpg"
+      },
+      {
+       "name": "カツオ",
+       "price": "979円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_5a3ed9cb02475c03a18723bed9da23db.jpg",
+       "file": "5a3ed9cb02475c03a18723bed9da23db.jpg"
       },
       {
        "name": "蛸とらっきょうの酢の物",
@@ -1203,7 +1211,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "スパークリングワイン",
@@ -1907,7 +1915,7 @@
  "menu-marunouchi.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "本日のおすすめ",
@@ -1933,6 +1941,14 @@
     {
      "name": "おつまみ•前菜•刺身",
      "items": [
+      {
+       "name": "大人のかっぱえびせん",
+       "price": "319円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_3e0f7635fc6500460c9966ea1a6d7c94.jpg",
+       "file": "3e0f7635fc6500460c9966ea1a6d7c94.jpg"
+      },
       {
        "name": "和梨ブリュレ",
        "price": "759円",
@@ -1989,6 +2005,14 @@
        "file": "8f8e042801ad9136288fe0297e002f4e.jpg"
       },
       {
+       "name": "天然カンパチ炙り刺し",
+       "price": "979円",
+       "desc": "",
+       "recommend": false,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/387990/640x640_rect_3730009e50d5569d0926992c2ba9f933.jpg",
+       "file": "3730009e50d5569d0926992c2ba9f933.jpg"
+      },
+      {
        "name": "旨辛エビ3本漬け",
        "price": "539円",
        "desc": "",
@@ -2011,20 +2035,20 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/b6366eff7a6af27bf4637b8dd8ee0356.jpg",
        "file": "b6366eff7a6af27bf4637b8dd8ee0356.jpg"
-      },
-      {
-       "name": "天然 ブリ炙り刺し",
-       "price": "979円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/386694/640x640_rect_c1395b68c4a07389b191800a516afae9.jpg",
-       "file": "c1395b68c4a07389b191800a516afae9.jpg"
       }
      ]
     },
     {
      "name": "厳選天ぷら",
      "items": [
+      {
+       "name": "いちじくゴルゴンゾーラ１ヶ",
+       "price": "429円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/387990/640x640_rect_6eac888ec6cdc613506e3c34ee509bd5.jpg",
+       "file": "6eac888ec6cdc613506e3c34ee509bd5.jpg"
+      },
       {
        "name": "サーモンタルタル",
        "price": "429円",
@@ -2069,14 +2093,6 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/150404/640x640_rect_150404291.jpg",
        "file": "a524c6285a57a358b527b5f5fd146c23.jpg"
-      },
-      {
-       "name": "大人のかっぱえびせん",
-       "price": "319円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_3e0f7635fc6500460c9966ea1a6d7c94.jpg",
-       "file": "3e0f7635fc6500460c9966ea1a6d7c94.jpg"
       },
       {
        "name": "海老〜頭付き〜　１尾",
@@ -2282,7 +2298,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "お飲み物",
@@ -2575,14 +2591,6 @@
        "recommend": false,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/381576/640x640_rect_507215b2b35e933881bdab7a5ebce1e3.jpg",
        "file": "507215b2b35e933881bdab7a5ebce1e3.jpg"
-      },
-      {
-       "name": "シュナンブラン　ボトル",
-       "price": "4,290円",
-       "desc": "",
-       "recommend": false,
-       "img": "https://tblg.k-img.com/restaurant/images/Rvw/380393/640x640_rect_f8ce41e60bff5cf81c1370f8f6cdf2e7.jpg",
-       "file": "f8ce41e60bff5cf81c1370f8f6cdf2e7.jpg"
       }
      ]
     },
@@ -2769,7 +2777,7 @@
  "menu-nakano.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "ランチタイム定食 定食",
@@ -3385,7 +3393,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "飲み物 ビール",
@@ -3857,7 +3865,7 @@
  "menu-tenma.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -4275,7 +4283,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "お飲み物",
@@ -4689,7 +4697,7 @@
  "menu-ten5.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "旬・本日のおすすめ",
@@ -4770,6 +4778,14 @@
        "recommend": true,
        "img": "https://tblg.k-img.com/restaurant/images/Rvw/382751/640x640_rect_c2453848b86646ffb34012cb34d95810.jpg",
        "file": "c2453848b86646ffb34012cb34d95810.jpg"
+      },
+      {
+       "name": "初カツオ塩たたき",
+       "price": "649円",
+       "desc": "",
+       "recommend": true,
+       "img": "https://tblg.k-img.com/restaurant/images/Rvw/387990/640x640_rect_bf5d6a4346f41e4628185a8b8536b7a6.jpg",
+       "file": "bf5d6a4346f41e4628185a8b8536b7a6.jpg"
       },
       {
        "name": "前菜小鉢盛り３種",
@@ -5053,7 +5069,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "ドリンク ビール・ハイボール・サワー・旬の果実サワー",
@@ -5459,7 +5475,7 @@
  "menu-dai3.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "旬もの（Seasonal foods）",
@@ -5826,7 +5842,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "ドリンク ビール、ハイボール、サワー（Beer, Whisky, Sour）",
@@ -6208,7 +6224,7 @@
  "menu-umeda.html": [
   {
    "kind": "料理",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "旬もの",
@@ -6627,7 +6643,7 @@
   },
   {
    "kind": "ドリンク",
-   "updated": "2026/10/12",
+   "updated": "2026/10/19",
    "categories": [
     {
      "name": "お飲み物 ビール・ハイボール",
