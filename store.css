@@ -337,8 +337,8 @@ section{padding:96px 16px}
 .has-slider .slides{position:relative;height:calc(var(--sw) * .5625)}
 .has-slider .slide{position:absolute;top:0;left:50%;width:var(--sw);height:100%;margin-left:calc(var(--sw) / -2);border-radius:18px;overflow:hidden;
   box-shadow:0 10px 30px rgba(12,26,56,.18);transition:transform .7s cubic-bezier(.22,.8,.3,1),opacity .7s;color:#fff;text-decoration:none;display:block;background:#000}
-.has-slider .slide>img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
-.has-slider .slide:hover>img{transform:scale(1.03)}
+.has-slider .slide>img,.has-slider .slide>video{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s ease}
+.has-slider .slide:hover>img,.has-slider .slide:hover>video{transform:scale(1.03)}
 .has-slider .slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.6) 100%);pointer-events:none}
 .has-slider .slide .cap{position:absolute;left:32px;right:32px;bottom:26px;z-index:2;display:flex;align-items:flex-end;gap:18px}
 .has-slider .slide .cap-logo{height:min(13vw,120px);width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}

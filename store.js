@@ -28,6 +28,7 @@
       s.setAttribute('aria-hidden',d===0?'false':'true');
     });
     [].forEach.call(dots.children,function(b,i){b.classList.toggle('on',i===cur)});
+    slides.forEach(function(s,i){var v=s.querySelector('video');if(v&&i===cur&&v.dataset.cur!=='1'){try{v.currentTime=0;v.play()}catch(e){}}if(v)v.dataset.cur=i===cur?'1':'0'});
   }
   function go(i){cur=(i+n)%n;layout()}
   function restart(){clearInterval(timer);timer=setInterval(function(){go(cur+1)},5500)}
