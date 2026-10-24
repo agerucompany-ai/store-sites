@@ -9,6 +9,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="store.css">
+<style>
+.ig-band{background:#f6f2ea}
+.ig-sub{text-align:center;margin:-28px 0 32px;font-family:var(--sans);font-size:14px;letter-spacing:.08em;color:var(--muted)}
+.ig-sub a{color:var(--main)}
+.ig-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:32px}
+.ig-tile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#e9e3d8}
+.ig-tile img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.ig-tile:hover img{transform:scale(1.04)}
+.ig-tile span{position:absolute;left:8px;bottom:6px;font-family:var(--sans);font-size:11px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6);letter-spacing:.05em}
+@media (max-width:600px){.ig-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+.btns.center{text-align:center}
+#message .lead-line{font-size:18px;font-weight:600;letter-spacing:.1em;margin-bottom:1em}
+#message .role{color:var(--accent)}
+</style>
 </head>
 <body class="tanba" style="--main:#2f4a2a;--accent:#c9a45c">
 
@@ -17,12 +31,13 @@
   <button class="menu-btn" aria-label="メニュー">☰</button>
   <nav>
     <a href="index.html">トップ</a>
-    <a href="#record">セリの実績</a>
-    <a href="#care">育て方</a>
+    <a href="#insta">Instagram</a>
     <a href="#barn">牛舎</a>
+    <a href="#care">育て方</a>
+    <a href="#record">セリの実績</a>
     <a href="#cycle">草と堆肥</a>
     <a href="#market">子牛市場へ</a>
-    <a href="#future">これから</a>
+    <a href="#message">ごあいさつ</a>
     <a class="nav-reserve" href="#contact">お問い合わせ</a>
   </nav>
 </header>
@@ -32,56 +47,42 @@
   <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">但馬牛の繁殖｜株式会社丹波農商</h1>
 </div>
 
-<!-- ===== 牛舎 ===== -->
+<!-- ===== Instagram（ページの一番上） ===== -->
+<section class="ig-band" id="insta">
+  <div class="wrap">
+    <h2 class="sec-title fade">牛舎の毎日</h2>
+    <p class="ig-sub fade">Instagram <a href="https://www.instagram.com/tambakobebeef/" target="_blank" rel="noopener">@tambakobebeef</a></p>
+    <div class="ig-grid">
+      <a class="ig-tile fade" href="https://www.instagram.com/p/Debl9eIGe66/" target="_blank" rel="noopener"><img src="img/insta/Debl9eIGe66.jpg" alt="Instagramの投稿 2026.10.13" loading="lazy"><span>2026.10.13</span></a>
+      <a class="ig-tile fade" href="https://www.instagram.com/p/DdBbGAPmbsX/" target="_blank" rel="noopener"><img src="img/insta/DdBbGAPmbsX.jpg" alt="Instagramの投稿 2026.9.8" loading="lazy"><span>2026.9.8</span></a>
+      <a class="ig-tile fade" href="https://www.instagram.com/p/DafNtd4GX2g/" target="_blank" rel="noopener"><img src="img/insta/DafNtd4GX2g.jpg" alt="Instagramの投稿 2026.7.7" loading="lazy"><span>2026.7.7</span></a>
+      <a class="ig-tile fade" href="https://www.instagram.com/p/DZXMgIQGUO4/" target="_blank" rel="noopener"><img src="img/insta/DZXMgIQGUO4.jpg" alt="Instagramの投稿 2026.6.9" loading="lazy"><span>2026.6.9</span></a>
+      <a class="ig-tile fade" href="https://www.instagram.com/p/DYPJ5TRmbVn/" target="_blank" rel="noopener"><img src="img/insta/DYPJ5TRmbVn.jpg" alt="Instagramの投稿 2026.5.12" loading="lazy"><span>2026.5.12</span></a>
+      <a class="ig-tile fade" href="https://www.instagram.com/p/DW05czyEnnQ/" target="_blank" rel="noopener"><img src="img/insta/DW05czyEnnQ.jpg" alt="Instagramの投稿 2026.4.7" loading="lazy"><span>2026.4.7</span></a>
+    </div>
+    <div class="btns center fade"><a class="btn solid" href="https://www.instagram.com/tambakobebeef/" target="_blank" rel="noopener">Instagramをフォローする</a></div>
+  </div>
+</section>
+
+<!-- ===== 牛舎紹介（動画） ===== -->
 <section id="barns">
   <div class="wrap">
-    <h2 class="sec-title fade">3つの牛舎</h2>
+    <h2 class="sec-title fade">牛舎紹介</h2>
     <div class="kuri-movie solo fade">
       <video src="video/gyusha.mp4" poster="img/gyusha.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
     </div>
   </div>
 </section>
 
-<!-- ===== メッセージ ===== -->
-<section id="message">
+<!-- ===== 牛舎 ===== -->
+<section class="dark" id="barn">
   <div class="wrap">
-    <h2 class="sec-title fade">市場で選ばれる子牛を</h2>
-    <div class="person">
-      <img class="fade" src="img/ushi-atsushi.jpg" alt="代表取締役 大塩敦史と母牛">
-      <div class="fade ushi-voice">
-        <p>私たちは母牛65頭の但馬牛の繁殖農家です。生まれた子牛を約9か月育て、毎月の但馬家畜市場のセリへ送り出しています。</p>
-        <p><b>子牛は早く乳離れさせず、できるだけ母牛の乳で育てます。</b>最初にしっかり免疫をつけることが、病気に強い牛への近道です。</p>
-        <p><b>初めてお産をする母牛は、個室でゆったりと。</b>落ち着いてお産に臨めるようにしています。</p>
-        <p><b>一頭ずつ、数字で見る。</b>お産、種付け、セリの価格まで、全頭の記録をつけています。どの母牛の子が、市場でどれだけ評価されたか。その結果をもとに、次の種付けと母牛の入れ替えを決めています。</p>
-        <p class="sign">株式会社丹波農商　代表取締役　大塩 敦史</p>
-      </div>
+    <h2 class="sec-title fade">山あいの牛舎</h2>
+    <p class="catch fade">風が抜け、光が入る牛舎。寝床にはもみ殻と稲わらを敷き、<br>使い終わったら堆肥になって田畑へ還ります。</p>
+    <div class="ig-gallery two">
+      <img class="fade" src="img/gs-barn-wood.jpg" alt="木の梁が通る新しい牛舎">
+      <img class="fade" src="img/gs-barn-out.jpg" alt="山あいに建つ新しい牛舎">
     </div>
-  </div>
-</section>
-
-<!-- ===== セリの実績（牛アプリの販売実績から） ===== -->
-<section class="dark" id="record">
-  <div class="wrap">
-    <h2 class="sec-title fade">セリの実績</h2>
-    <ul class="ushi-stats">
-      <li class="fade"><b>157<small>頭</small></b><span>但馬家畜市場へ<br>送り出した子牛</span></li>
-      <li class="fade"><b>6<small>年連続</small></b><span>市場の平均を<br>上回る評価</span></li>
-      <li class="fade"><b>72<small>軒</small></b><span>買っていただいた<br>肥育農家さん</span></li>
-      <li class="fade"><b>65<small>頭</small></b><span>いまの母牛</span></li>
-    </ul>
-    <div class="ushi-table-wrap fade">
-      <table class="ushi-table">
-        <thead><tr><th>年度<small>（10月〜翌9月）</small></th><th>頭数</th><th>市場平均＝100</th><th>評価</th></tr></thead>
-        <tbody><tr><th>2020年10月〜2021年9月</th><td>8頭</td><td class="up">104.8</td><td class="up">上回る</td></tr><tr><th>2021年10月〜2022年9月</th><td>17頭</td><td class="up">102.6</td><td class="up">上回る</td></tr><tr><th>2022年10月〜2023年9月</th><td>24頭</td><td class="up">108.0</td><td class="up">上回る</td></tr><tr><th>2023年10月〜2024年9月</th><td>27頭</td><td class="up">101.6</td><td class="up">上回る</td></tr><tr><th>2024年10月〜2025年9月</th><td>38頭</td><td class="up">101.4</td><td class="up">上回る</td></tr><tr><th>2025年10月〜2026年9月</th><td>43頭</td><td class="up">101.0</td><td class="up">上回る</td></tr></tbody>
-      </table>
-    </div>
-    <p class="catch fade">市場で売り始めてから6年間、毎年、同じ日のセリに出た同じ性別の子牛の平均を上回る評価をいただいています。</p>
-    <ul class="ushi-points">
-      <li class="fade"><b>A5-11</b><span>私たちが育てた子牛が、肥育農家さんのもとで神戸ビーフ40周年記念共励会に出品され、A5-11の評価を受けました（2024年）。</span></li>
-      <li class="fade"><b>繁殖用にも</b><span>2024年から、雌の子牛が繁殖用の母牛として、ほかの繁殖農家さんにも買われるようになりました。</span></li>
-      <li class="fade"><b>グランプリ</b><span>第11回丹波農業グランプリで、牛と牧草と堆肥をつなぐ取り組みがグランプリをいただきました（2024年）。</span></li>
-    </ul>
-    <p class="ushi-note fade">※ 2021年1月〜2026年9月の但馬家畜市場の販売実績（自社の牛の管理記録より）。「市場平均＝100」は、同じ日のセリに出た同じ性別の子牛の平均価格を100としたときの、私たちの子牛の価格の割合（年度ごとの合計で計算）。母牛の頭数は2026年10月時点。</p>
   </div>
 </section>
 
@@ -124,15 +125,29 @@
   </div>
 </section>
 
-<!-- ===== 牛舎 ===== -->
-<section class="dark" id="barn">
+<!-- ===== セリの実績（牛アプリの販売実績から） ===== -->
+<section class="dark" id="record">
   <div class="wrap">
-    <h2 class="sec-title fade">山あいの牛舎</h2>
-    <p class="catch fade">風が抜け、光が入る牛舎。寝床にはもみ殻と稲わらを敷き、<br>使い終わったら堆肥になって田畑へ還ります。</p>
-    <div class="ig-gallery two">
-      <img class="fade" src="img/gs-barn-wood.jpg" alt="木の梁が通る新しい牛舎">
-      <img class="fade" src="img/gs-barn-out.jpg" alt="山あいに建つ新しい牛舎">
+    <h2 class="sec-title fade">セリの実績</h2>
+    <ul class="ushi-stats">
+      <li class="fade"><b>157<small>頭</small></b><span>但馬家畜市場へ<br>送り出した子牛</span></li>
+      <li class="fade"><b>6<small>年連続</small></b><span>市場の平均を<br>上回る評価</span></li>
+      <li class="fade"><b>72<small>軒</small></b><span>買っていただいた<br>肥育農家さん</span></li>
+      <li class="fade"><b>65<small>頭</small></b><span>いまの母牛</span></li>
+    </ul>
+    <div class="ushi-table-wrap fade">
+      <table class="ushi-table">
+        <thead><tr><th>年度<small>（10月〜翌9月）</small></th><th>頭数</th><th>市場平均＝100</th><th>評価</th></tr></thead>
+        <tbody><tr><th>2020年10月〜2021年9月</th><td>8頭</td><td class="up">104.8</td><td class="up">上回る</td></tr><tr><th>2021年10月〜2022年9月</th><td>17頭</td><td class="up">102.6</td><td class="up">上回る</td></tr><tr><th>2022年10月〜2023年9月</th><td>24頭</td><td class="up">108.0</td><td class="up">上回る</td></tr><tr><th>2023年10月〜2024年9月</th><td>27頭</td><td class="up">101.6</td><td class="up">上回る</td></tr><tr><th>2024年10月〜2025年9月</th><td>38頭</td><td class="up">101.4</td><td class="up">上回る</td></tr><tr><th>2025年10月〜2026年9月</th><td>43頭</td><td class="up">101.0</td><td class="up">上回る</td></tr></tbody>
+      </table>
     </div>
+    <p class="catch fade">市場で売り始めてから6年間、毎年、同じ日のセリに出た同じ性別の子牛の平均を上回る評価をいただいています。</p>
+    <ul class="ushi-points">
+      <li class="fade"><b>A5-11</b><span>私たちが育てた子牛が、肥育農家さんのもとで神戸ビーフ40周年記念共励会に出品され、A5-11の評価を受けました（2024年）。</span></li>
+      <li class="fade"><b>繁殖用にも</b><span>2024年から、雌の子牛が繁殖用の母牛として、ほかの繁殖農家さんにも買われるようになりました。</span></li>
+      <li class="fade"><b>グランプリ</b><span>第11回丹波農業グランプリで、牛と牧草と堆肥をつなぐ取り組みがグランプリをいただきました（2024年）。</span></li>
+    </ul>
+    <p class="ushi-note fade">※ 2021年1月〜2026年9月の但馬家畜市場の販売実績（自社の牛の管理記録より）。「市場平均＝100」は、同じ日のセリに出た同じ性別の子牛の平均価格を100としたときの、私たちの子牛の価格の割合（年度ごとの合計で計算）。母牛の頭数は2026年10月時点。</p>
   </div>
 </section>
 
@@ -165,14 +180,22 @@
   </div>
 </section>
 
-<!-- ===== これから ===== -->
-<section id="future">
+<!-- ===== 代表あいさつ（ページの一番下） ===== -->
+<section class="ig-band" id="message">
   <div class="wrap">
-    <h2 class="sec-title fade">これから</h2>
-    <div class="menu-grid biz-grid">
-      <div class="menu-item fade"><img src="img/ushi-spring.jpg" alt=""><h3>母牛70頭、年50頭以上を市場へ</h3><p>セリで評価の高かった母牛の娘を残し、若い母牛に入れ替えながら、母牛70頭まで増やします。来期は50頭以上を送り出す予定です。</p></div>
-      <div class="menu-item fade"><img src="img/ig-abandoned.jpg" alt=""><h3>草も、もっと自分たちで</h3><p>耕作放棄地をさらに牧草地へ。地域の草で育つ牛を増やしていきます。</p></div>
-      <div class="menu-item fade"><img src="img/ig-three.jpg" alt=""><h3>仲間とともに</h3><p>それぞれの持ち味を活かし、毎日ワクワクして仕事に取り組める会社に。良い会社から、良い牛が生まれると信じています。</p></div>
+    <h2 class="sec-title fade">ごあいさつ</h2>
+    <div class="person">
+      <img class="fade" src="img/ushi-atsushi.jpg" alt="代表取締役 大塩敦史と母牛">
+      <div class="fade ushi-voice">
+        <div class="role">株式会社丹波農商　代表取締役</div>
+        <h3>大塩 敦史</h3>
+        <p class="lead-line">市場で選ばれる子牛を。</p>
+        <p>私たちは母牛65頭の但馬牛の繁殖農家です。生まれた子牛を約9か月育て、毎月の但馬家畜市場のセリへ送り出しています。</p>
+        <p><b>子牛は早く乳離れさせず、できるだけ母牛の乳で育てます。</b>最初にしっかり免疫をつけることが、病気に強い牛への近道です。</p>
+        <p><b>初めてお産をする母牛は、個室でゆったりと。</b>落ち着いてお産に臨めるようにしています。</p>
+        <p><b>一頭ずつ、数字で見る。</b>お産、種付け、セリの価格まで、全頭の記録をつけています。どの母牛の子が、市場でどれだけ評価されたか。その結果をもとに、次の種付けと母牛の入れ替えを決めています。</p>
+        <p class="sign">株式会社丹波農商　代表取締役　大塩 敦史</p>
+      </div>
     </div>
   </div>
 </section>

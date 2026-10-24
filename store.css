@@ -721,3 +721,7 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
 .tanba .kuri-steps-list h3{font-size:17px;font-weight:600;letter-spacing:.06em;margin:2px 0 4px;color:var(--main)}
 .tanba .kuri-steps-list p{font-size:14px;line-height:1.9;margin:0}
 @media (max-width:800px){.tanba .kuri-steps-movie{grid-template-columns:1fr;gap:20px}}
+.tanba img.kuri-logo-inline{display:block;width:140px!important;max-width:60%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border-radius:0!important;margin:6px auto 10px!important}
+.tanba .g-link:has(.kuri-logo-link){display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.tanba img.kuri-logo-link{height:2.2em!important;width:auto!important;border-radius:0!important}
+.tanba .kuri-brand-logo img{display:block;width:min(560px,78vw);height:auto;margin:0 auto;filter:drop-shadow(0 4px 18px rgba(0,0,0,.5))}
