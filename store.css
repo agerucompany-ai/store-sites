@@ -725,3 +725,7 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
 .tanba .g-link:has(.kuri-logo-link){display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .tanba img.kuri-logo-link{height:2.2em!important;width:auto!important;border-radius:0!important}
 .tanba .kuri-brand-logo img{display:block;width:min(560px,78vw);height:auto;margin:0 auto;filter:drop-shadow(0 4px 18px rgba(0,0,0,.5))}
+
+.tanba .kuri-chefs{margin:0}
+.tanba .kuri-chefs img{width:100%;height:auto;border-radius:14px;display:block}
+.tanba .kuri-chefs figcaption{font-size:13px;opacity:.75;text-align:center;margin-top:10px}
