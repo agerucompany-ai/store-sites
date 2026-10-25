@@ -309,7 +309,10 @@ def main():
             return
         g("commit", "-m", f"{store}: 食べログのメニューを同期")
         g("pull", "--rebase", "-q")
-        subprocess.run(["zsh", "-c", "source ~/.github_env; git -C '%s' push -q \"https://x-access-token:${GITHUB_TOKEN:-$GH_TOKEN}@github.com/agerucompany-ai/store-sites.git\" main" % ROOT])
+        subprocess.run(["zsh", "-c", "source ~/.github_env; git -C '%s' pull -q --rebase --autostash \"https://x-access-token:${GITHUB_TOKEN:-$GH_TOKEN}@github.com/agerucompany-ai/store-sites.git\" main" % ROOT])
+        r = subprocess.run(["zsh", "-c", "source ~/.github_env; git -C '%s' push -q \"https://x-access-token:${GITHUB_TOKEN:-$GH_TOKEN}@github.com/agerucompany-ai/store-sites.git\" main" % ROOT])
+        if r.returncode != 0:
+            print("push失敗→公開しない（他の端末の変更を上書きしないため）"); sys.exit(1)
         subprocess.run([str(ROOT / "deploy.sh"), store])
 
 
