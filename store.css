@@ -305,7 +305,7 @@ section{padding:96px 16px}
 .tanba .kuri-points h3,.tanba .kuri-steps h3{font-size:18px;font-weight:600;letter-spacing:.06em;margin:2px 0 8px;color:var(--main)}
 .tanba .kuri-points p,.tanba .kuri-steps p{font-size:14px;line-height:2}
 .tanba .dark .person .note{color:#fff}
-.tanba .kuri-photos{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0 0 28px}
+.tanba .kuri-photos{max-width:640px;margin:0 auto 28px}
 .tanba .kuri-photos figure{margin:0}
 .tanba .kuri-photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
 .tanba .kuri-products{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
