@@ -4,7 +4,7 @@
   python3 tools/tempura_shops.py
 
 店の情報（並び順・住所・電話・営業時間・予約先）は tempura/shops.json だけを直す。
-各店ページの「今の旬」写真は menu.json（毎朝の食べログ同期）から取るので、同期のあとに毎回流す。
+メニューは menu-<店>.html（毎朝の食べログ同期）。店ページには旬の欄を置かない（2026-11-16 オーナー指示・メニューと重なる）。
 """
 import html, json, re, urllib.parse
 from pathlib import Path
@@ -43,60 +43,11 @@ def card(s):
       </article>"""
 
 
-def season_rule():
-    """旬の決まり（tempura/season.json）。オーナー指示 2026-11-16「旬じゃない品（カマンベール・蓮根）やいちじくを旬と書くな」。
-    品名に include のどれかを含み、exclude を含まず、飲み物の分類でない品だけを「旬」にする。季節が変わったら season.json だけ直す。"""
-    try:
-        r = json.loads((D / "season.json").read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        r = {}
-    return r.get("include", []), r.get("exclude", []), r.get("drink_categories", [])
-
-
-def is_season(name, cat, rule):
-    inc, exc, drink = rule
-    if any(w in cat for w in drink):
-        return False
-    if any(w in name for w in exc):
-        return False
-    return any(w in name for w in inc)
-
-
-def season_items(k):
-    """その店のメニューから「旬」の決まりに当たる写真つきの品を、おすすめを先に最大12品。"""
-    try:
-        menu = json.loads((D / "menu.json").read_text(encoding="utf-8")).get(f"menu-{k}.html", [])
-    except FileNotFoundError:
-        return []
-    rule = season_rule()
-    items, seen = [], set()
-    for part in menu:
-        for c in part["categories"]:
-            for it in c["items"]:
-                if not is_season(it["name"], c["name"], rule):
-                    continue
-                if it.get("file") and it["file"] not in seen and (D / "menu-img" / it["file"]).exists():
-                    seen.add(it["file"])
-                    items.append(it)
-    items.sort(key=lambda it: not it["recommend"])
-    return items[:12]
-
-
 def page(s, shops):
     k, full = s["key"], f'{NAME} {s["name"]}'
     q = urllib.parse.quote(f'{full} {s["addr"]}')
-    items = season_items(k)
+    # 「○○店の旬」の欄はメニューと重なるので出さない（2026-11-16 オーナー「旬とかいらん。メニューでいいやろ。被ってる」）
     strip = ""
-    if items:
-        cards = "".join(f'<figure class="m-card"><img src="menu-img/{it["file"]}" alt="{esc(it["name"])}" loading="lazy">'
-                        f'<figcaption>{esc(it["name"])}<span>{esc(it["price"])}</span></figcaption></figure>' for it in items)
-        dup = cards.replace('<figure class="m-card">', '<figure class="m-card" aria-hidden="true">')
-        strip = f"""
-<section class="dark season">
-  <h2 class="sec-title fade">{esc(s["name"])}の旬</h2>
-  <div class="h-row"><div class="h-track">{cards}{dup}</div></div>
-  <p class="menu-more"><a class="btn" href="menu-{k}.html">メニューをすべて見る</a></p>
-</section>"""
     on = ' class="on"'
     others = "".join(f'<a href="shop-{o["key"]}.html"{on if o["key"] == k else ""}>{o["name"]}</a>' for o in shops)
     ld = {"@context": "https://schema.org", "@type": "Restaurant", "name": full, "url": f"{SITE}shop-{k}.html",
