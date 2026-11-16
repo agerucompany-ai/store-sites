@@ -20,6 +20,11 @@ SNIP = (MARK
 
 
 def main(root):
+    # 和食大塩（washoku-oshio.com）にも同じ計測を入れる（2026-11-16）。track.js は天ぷらの正本をそのまま使う
+    src = Path(__file__).resolve().parent.parent / "tempura" / "track.js"
+    dst = Path(root) / "track.js"
+    if not dst.exists():
+        dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
     n = 0
     for p in Path(root).rglob("*.html"):
         t = p.read_text(encoding="utf-8")
