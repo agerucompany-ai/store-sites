@@ -43,16 +43,38 @@ def card(s):
       </article>"""
 
 
-def season_items(k):
-    """その店のメニューから写真つきの品を、おすすめを先に最大12品。"""
+def season_rule():
+    """旬の決まり（tempura/season.json）。オーナー指示 2026-11-16「旬じゃない品（カマンベール・蓮根）やいちじくを旬と書くな」。
+    品名に include のどれかを含み、exclude を含まず、飲み物の分類でない品だけを「旬」にする。季節が変わったら season.json だけ直す。"""
     try:
-        menu = json.loads((D / "menu.json").read_text()).get(f"menu-{k}.html", [])
+        r = json.loads((D / "season.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        r = {}
+    return r.get("include", []), r.get("exclude", []), r.get("drink_categories", [])
+
+
+def is_season(name, cat, rule):
+    inc, exc, drink = rule
+    if any(w in cat for w in drink):
+        return False
+    if any(w in name for w in exc):
+        return False
+    return any(w in name for w in inc)
+
+
+def season_items(k):
+    """その店のメニューから「旬」の決まりに当たる写真つきの品を、おすすめを先に最大12品。"""
+    try:
+        menu = json.loads((D / "menu.json").read_text(encoding="utf-8")).get(f"menu-{k}.html", [])
     except FileNotFoundError:
         return []
+    rule = season_rule()
     items, seen = [], set()
     for part in menu:
         for c in part["categories"]:
             for it in c["items"]:
+                if not is_season(it["name"], c["name"], rule):
+                    continue
                 if it.get("file") and it["file"] not in seen and (D / "menu-img" / it["file"]).exists():
                     seen.add(it["file"])
                     items.append(it)
