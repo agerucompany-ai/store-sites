@@ -122,6 +122,7 @@ def page(s, shops):
   </div>
 </section>
 
+<a class="reserve-bar" href="{s["reserve"]}" target="_blank" rel="noopener">ご予約</a>
 <footer class="site-footer">
   <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
   運営：株式会社アゲル

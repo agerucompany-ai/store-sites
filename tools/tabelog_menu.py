@@ -189,6 +189,7 @@ def render(store, cfg, data, name=None, reserve=None, switcher=""):
   <button class="menu-btn" aria-label="メニュー">☰</button>
   <nav>
 {nav}
+    <a class="nav-reserve" href="{reserve}" target="_blank" rel="noopener">ご予約</a>
   </nav>
 </header>
 
@@ -196,6 +197,7 @@ def render(store, cfg, data, name=None, reserve=None, switcher=""):
   <img src="img/logo.png" alt="{name}">
   <h1>メニュー</h1>{switcher}
   <p>税込価格／{updated} 時点</p>
+  <p class="menu-reserve"><a class="btn" href="{reserve}" target="_blank" rel="noopener">ご予約はこちら</a></p>
 </div>
 <div class="menu-tabs">{"".join(tabs)}</div>
 <div class="menu-body">
@@ -204,6 +206,8 @@ def render(store, cfg, data, name=None, reserve=None, switcher=""):
 <p class="center"><a class="btn solid" href="{reserve}" target="_blank" rel="noopener">ご予約はこちら</a></p>
 </div>
 
+<!-- 予約は上に1つ＋スマホは画面下に常に表示（2026-11-18 オーナー「予約が一番下にしかないから上に」） -->
+<a class="reserve-bar" href="{reserve}" target="_blank" rel="noopener">ご予約</a>
 <footer class="site-footer">
   <a href="https://agerucompany-ai.github.io/ageruinc-site/" target="_blank" rel="noopener"><img src="img/ageru.png" alt="AGERU inc."></a>
   運営：株式会社アゲル

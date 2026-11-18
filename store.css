@@ -732,3 +732,12 @@ html[lang="en"] body,html[lang="ko"] body{word-break:normal;overflow-wrap:anywhe
 .tanba .kuri-chefs{margin:0}
 .tanba .kuri-chefs img{width:100%;height:auto;border-radius:14px;display:block}
 .tanba .kuri-chefs figcaption{font-size:13px;opacity:.75;text-align:center;margin-top:10px}
+
+/* 予約ボタン：メニュー上部に1つ＋スマホは画面下に常に表示（2026-11-18） */
+.menu-head p.menu-reserve{margin-top:16px;opacity:1}
+.menu-reserve .btn{font-size:16px;padding:12px 40px}
+.reserve-bar{display:none}
+@media (max-width:800px){
+  .reserve-bar{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--accent);color:#1a1a1a;text-align:center;font-weight:700;font-size:16px;letter-spacing:.1em;padding:14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.28);text-decoration:none;font-family:var(--sans)}
+  body:has(.reserve-bar){padding-bottom:78px}
+}
